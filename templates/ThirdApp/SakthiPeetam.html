@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>SakthiPeetam</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="https://ih1.redbubble.net/image.1909441780.5259/st,small,507x507-pad,600x600,f8f8f8.u2.jpg" rel="icon">
+  <link href="https://ih1.redbubble.net/image.1909441780.5259/st,small,507x507-pad,600x600,f8f8f8.u2.jpg" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Restaurantly
+  * Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Shadows+Into+Light+Two&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Shadows+Into+Light+Two&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Yellowtail&display=swap');
+
+
+.aboutme {
+  display: flex;
+  flex-direction: row; /* Places the image and text side by side */
+  align-items: center; /* Vertically aligns the content */
+}
+
+#photo {
+  width: 600px; /* Adjust the width as needed */
+  height: 850px;
+  margin-right: 20px; /* Adds space between the image and the text */
+}
+
+.title, .words-container {
+  display: flex;
+  flex-direction: column; /* Stacks the title and words vertically */
+  align-items: center;
+}
+
+.title {
+  font-size: 100px;
+  font-family: "Yellowtail", cursive;
+  text-align: center;
+}
+
+.words {
+  font-family: "Sour Gummy", sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+.red-name {
+  color: red;
+}
+
+
+</style>
+
+</head>
+
+<body class="starter-page-page">
+
+  <header id="header" class="header fixed-top">
+
+    <div class="topbar d-flex align-items-center">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope d-flex align-items-center"><a href="#" style="color:White">contact@darshan.com</a></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span style="color:White" >+91 9876543210</span></i>
+        </div>
+        <div class="languages d-none d-md-flex align-items-center">
+          <ul>
+            <li>En</li>
+            <li><a href="#">Te</a></li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- End Top Bar -->
+
+    <div class="branding d-flex align-items-cente">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+           <img src="https://ih1.redbubble.net/image.1909441780.5259/st,small,507x507-pad,600x600,f8f8f8.u2.jpg">
+          <img src="assets/img/logo1.png" alt="">
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html"><strong>HOME</strong><br></a></li>
+            <li><a href="aboutus.html"><strong>ABOUT US</strong></a></li>
+            <li><a href="index.html#menu"><strong>DONATIONS</strong></a></li>
+            <li><a href="index.html#specials"><strong>OUR POJA</strong></a></li>
+            <li><a href="#"><strong>VEDAS</strong></a></li>
+            <li class="dropdown"><a href="#"><strong>SLOKAS</strong> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                
+                <li class="dropdown"><a href="#"><span>Slokas</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <li><a href="https://shlokam.org/index/">Shlokam</a></li>
+                    <li><a href="https://shlokam.org/tag/stotram/">Stotram</a></li>
+                    <li><a href="https://shlokam.org/tag/mantra/">Mantram</a></li>
+                    <li><a href="https://shlokam.org/tag/suktam/">Suktam</a></li>
+                    <li><a href="https://shlokam.org/category/Upanishad/">Upanishads</a></li>
+                  </ul>
+                </li>
+                <li><a href="https://shlokam.org/bhagavad-gita/">Bhagavad Gita</a></li>
+                <li><a href="https://www.valmikiramayan.net/">Ramayanam</a></li>
+                <li><a href="https://www.srimadbhagavatamclass.com/">Bhagavatam</a></li>
+                <li class="dropdown"><a href="#"><span>Anushtanam</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <li><a href="https://stotranidhi.com/puja-vidhanamu/">Pujalu</a></li>
+                    <li><a href="https://stotranidhi.com/vratalu-in-telugu/">Vratalu</a></li>
+                    <li><a href="https://stotranidhi.com/anubandham/sandhya-vandanam-in-telugu/">Sandhya Vandanam</a></li>
+                  </ul>
+                </li>  
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#"><strong>Books</strong> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="https://stotranidhi.com/books/">Printed Books</a></li>
+                <li><a href="https://stotranidhi.com/ebooks/">E-bOOKS</a></li>
+                <li><a href="https://stotranidhi.com/errata/">Errata</a></li>
+              </ul>
+            </li>  
+              <li><a href="contactus.html"><strong>Contact</strong></a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+ <!-- Chefs Section -->
+ <section id="chefs" class="chefs section">
+<br/><br/><br/><br/>
+
+    <div>
+        <marquee><strong style= "color:red;">
+            *** "ఓం శ్రీ మాత్రే నమః!" *** "ॐ श्री मात्रे नमः" *** "Om Sri Matre Namaha" *** "ஓம் ஸ்ரீ மாத்ரே நமஹ" *** "ಓಂ ಶ್ರೀ ಮಾತ್ರೇ ನಮಃ" *** "ઓમ શ્રી માત્રે નમઃ" *** "ओम श्री मात्रे नमः" *** "ഓം നമഃ ശിവായ" ***
+        </strong></marquee>
+    </div>
+<br/>
+
+<div>
+  <p><h1 style= "color:#132a13; text-align: center;"><b>List of 18  Ashtadasha Maha Shakti peethas</b></h1></p>
+
+</div>
+<div class="container">
+
+      <div class="row gy-4">
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="member">
+           <img src="https://templesinindiainfo.com/wp-content/uploads/2020/04/Trincomalee-Shankari-Peetham.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <a href=""><h4>1. Shankari Devi Temple - Sri Lanka </h4></a>
+              </div>
+              <!--<div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>-->
+            
+            </div>
+          </div>
+        </div><!-- End Team Member -->
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="member">
+            <img src="https://cdn.99pandit.com/images/blogsimg/Kanchi-Kamakshi-Temple-1.webp" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <a href=""><h4>2. Kamakshi Amman Temple - Kanchipuram</h4></a>
+              </div>
+              <!--<div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>-->
+            </div>
+          </div>
+        </div><!-- End Team Member -->
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="member">
+            <img src="https://www.astrojyoti.com/wp-content/uploads/2021/08/Praddyumnam-Sri-Srunkhala-Devi.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <a href=""><div class="member-info-content">
+                <h4>3. Shrunkala Devi Temple - West Bengal</h4>
+              </div></a>
+              <!--<div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>-->
+            </div>
+          </div>
+        </div><!-- End Team Member -->
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="member">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi7GF_ukl7BkV8kwT8SywwFGV6f8XJN-jp1g&s" class="img-fluid" alt="">
+            <div class="member-info">
+              <a href=""><div class="member-info-content">
+                <h4>4. Chamundeshwari Temple - Karnataka</h4>
+              </div></a>
+             <!--<div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>-->
+            </div>
+          </div>
+        </div><!-- End Team Member -->
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="member">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi02uIvyivjO3gianGjv2q00L5u7JvEBoUvNJ5FCTleA6DlsYubjVw1sAmWjrWm3fxU7Semjp9w9w1vhkGJU5e2Mum-y6xwkrAOgDefYKZrEkajZnyY3HUXCz8mZ9i43-NvFt0uG_tIBRaSfsmTGG2C5rIcn0vK9XkA6VZQQPPpJEt2khM6woRbQZVF/s16000-rw/Dussehra-Special..Jogulamba-Temple.jpg"  class="img-fluid" alt="">
+            <div class="member-info">
+              <a href=""><div class="member-info-content">
+                <h4>5. Jogulamba Temple - Alampur</h4>
+              </div></a>
+              <!--<div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>-->
+            </div>
+          </div>
+        </div><!-- End Team Member -->
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="member">
+            <img src="https://i.pinimg.com/originals/c0/2c/be/c02cbefc32637dc8c35889433ec19c42.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <a href=""><div class="member-info-content">
+                <h4>6. Bhramaramba Mallikarjuna Temple - Srisailam</h4>
+              </div></a>
+              <!--<div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>-->
+            </div>
+          </div>
+        </div><!-- End Team Member -->
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="member">
+            <img src="https://i.ytimg.com/vi/FWXj8YafFZs/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDUigSe_KphLz37AoP-Q_MbP15_AA" class="img-fluid" alt="">
+            <div class="member-info">
+              <a href=""><div class="member-info-content">
+                <h4>7. Mahalaxmi Temple - Kolhapur</h4>
+              </div></a>
+              <!--<div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>-->
+            </div>
+          </div>
+        </div><!-- End Team Member -->
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="member">
+            <img src="https://www.renukadevitrust.org/wp-content/uploads/2023/09/RDMCT-Mahurgadh1.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <a href=""><div class="member-info-content">
+                <h4>8. Renuka Temple - Mahur</h4>
+              </div></a>
+              <!--<div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>-->
+            </div>
+          </div>
+        </div><!-- End Team Member -->
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="member">
+            <img src="https://www.mptourism.com/web/image/catalog/Blog%20Image/Mahakal-ujjain1.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <a href=""><div class="member-info-content">
+                <h4>9. Sri Ujjani Mahakali Devasthanam - Ujjain</h4>
+              </div></a>
+              <!--<div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>-->
+            </div>
+          </div>
+        </div><!-- End Team Member -->
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="member">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfPS30Cv9-KY-6X_LPJI_bu0Qnnxk5uwtIJQ&s" class="img-fluid" alt="">
+            <div class="member-info">
+              <a href=""><div class="member-info-content">
+                <h4>10. Puruhutika Devi Temple - Andhra Pradesh</h4>
+              </div></a>
+              <!--<div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>-->
+            </div>
+          </div>
+        </div><!-- End Team Member -->
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="member">
+            <img src="https://haldwanilive.com/wp-content/uploads/2024/05/garjia-temple.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <a href=""><div class="member-info-content">
+                <h4>11. Girijadevi Temple - Odisha</h4>
+              </div></a>
+              <!--<div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>-->
+            </div>
+          </div>
+        </div><!-- End Team Member -->
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="member">
+            <img src="https://templesinindiainfo.com/wp-content/uploads/2017/01/Draksharamam-Temple.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <a href=""><div class="member-info-content">
+                <h4>12. Manikyam Dakshavatike Temple - Draksharamam</h4>
+              </div></a>
+              <!--<div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>-->
+            </div>
+          </div>
+        </div><!-- End Team Member -->
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="member">
+            <img src="https://www.rhinotourism.com/uploads/1/6/9/1/16919614/kamakhya-temple1_orig.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <a href=""><div class="member-info-content">
+                <h4>13. Kamakhya Temple - Guwahati</h4>
+              </div></a>
+              <!--<div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>-->
+            </div>
+          </div>
+        </div><!-- End Team Member -->
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="member">
+            <img src="https://static.bhaktibharat.com/photo/mandir/alopi-devi-mandi.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <a href=""><div class="member-info-content">
+                <h4>14. Alopi Devi Mandir - Prayagraj</h4>
+              </div></a>
+              <!--<div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>-->
+            </div>
+          </div>
+        </div><!-- End Team Member -->
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="member">
+            <img src="https://static.wixstatic.com/media/9618c7_8f39ff18b5ee4579aa9c67d4857456a2~mv2.png/v1/fill/w_568,h_296,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/9618c7_8f39ff18b5ee4579aa9c67d4857456a2~mv2.png" class="img-fluid" alt="">
+            <div class="member-info">
+              <a href=""><div class="member-info-content">
+                <h4>15. Jwalamukhi Temple - Jwalamukhi</h4>
+              </div></a>
+              <!--<div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>-->
+            </div>
+          </div>
+        </div><!-- End Team Member -->
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="member">
+            <img src="https://templesinindiainfo.com/wp-content/uploads/2017/02/Mangala-Gauri-Temple-Gaya.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <a href=""><div class="member-info-content">
+                <h4>16. Mangla Gauri Temple - Gaya</h4>
+              </div></a>
+              <!--<div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>-->
+            </div>
+          </div>
+        </div><!-- End Team Member -->
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="member">
+            <img src="https://feeds.abplive.com/onecms/images/uploaded-images/2024/05/18/7201553a8e79f88a345ecb1d4809b1631716005800490217_original.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <a href=""><div class="member-info-content">
+                <h4>17. Vishalakshi Temple - Varanasi</h4>
+              </div></a>
+              <!--<div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>-->
+            </div>
+          </div>
+        </div><!-- End Team Member -->
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="member">
+            <img src="https://bharatmarg.com/wp-content/uploads/2020/08/Sharda-Mata-and-miracle-featured-image.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <a href=""><div class="member-info-content">
+                <h4>18. Sharada Peeth Temple - Sharda, Kashmir</h4>
+              </div></a>
+              <!--<div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>-->
+            </div>
+          </div>
+        </div><!-- End Team Member -->
+
+      </div>
+
+    </div>
+
+  </section><!-- /Chefs Section -->
+
+    
+  </main>
+
+   <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Darshan</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Hyderabad</p>
+            <p>Telangana, India</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+91 9876543210</span></p>
+            <p><strong>Email:</strong> <span>info@darshan.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="aboutus.html">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Slokas</a></li>
+            <li><a href="#">Vedas</a></li>
+            <li><a href="#">Books</a></li>
+            <li><a href="#">Bhagavad Gita</a></li>
+            <li><a href="#">Ramayanam</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>Our Newsletter</h4>
+          <p>Subscribe to our newsletter and receive the latest news about our Darshan and services!</p>
+          <form action="forms/newsletter.php" method="post" class="php-email-form">
+            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Darshan - 2024</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="">Subbu</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader 
+  <div id="preloader"></div>-->
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

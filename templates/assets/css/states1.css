@@ -1,0 +1,295 @@
+/* RESET & STRUCTURAL CORE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', 'Roboto', sans-serif;
+  background-color: #FFE96F;
+  color: #333;
+  padding: 20px 15px;
+  line-height: 1.6;
+}
+
+header.header-container {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.page-main-title {
+  color: #f70000;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+/* RESPONSIVE CSS GRID FOR CARDS */
+.temple-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* CARD VIEW INTERACTION STYLING */
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-wrapper {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.card-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .card-img-wrapper img {
+  transform: scale(1.06);
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #999;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.card-description {
+  font-size: 18px;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.card-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f70000;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.card:hover .card-button {
+  background-color: #b50202;
+}
+
+/* RESPONSIVE MODAL OVERLAYS USING FLEXBOX */
+.modal-overlay {
+  display: none; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(4px);
+  z-index: 2000;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.modal-overlay.active {
+  display: flex;
+  opacity: 1;
+}
+
+.modal-window {
+  background-color: #fff;
+  border-radius: 12px;
+  max-width: 950px;
+  width: 100%;
+  max-height: 90vh;
+  padding: 35px;
+  position: relative;
+  overflow-y: auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 32px;
+  color: #555;
+  cursor: pointer;
+  z-index: 10;
+  transition: color 0.2s;
+}
+
+.close-btn:hover {
+  color: #f70000;
+}
+
+/* FLEX ENGINE STRUCTURE INSIDE MODAL */
+.modal-body-flex {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.modal-info-panel {
+  flex: 1.2;
+}
+
+.modal-temple-heading {
+  color: #f70000;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 10px 0 15px 0;
+}
+
+.modal-info-panel p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.learn-more-link {
+  display: inline-block;
+  margin-top: 15px;
+  color: #f71111;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.learn-more-link:hover {
+  text-decoration: underline;
+}
+
+.modal-slider-panel {
+  flex: 0.8;
+  width: 90%;
+}
+
+.slide-container {
+  width: 100%;
+  height: 390px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(241, 1, 1, 0.1);
+}
+
+.active-slide {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* CHROMATIC ANIMS (RAINBOW TEXT EFFECT) */
+.rainbow-text {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #14ffe9, #ffc800, #ff00e0, #14ffe9);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: moveRainbow 4s linear infinite;
+}
+
+@keyframes moveRainbow {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 300% 50%; }
+}
+
+
+/*--------------------------------------------------------------
+# Scroll Top Button
+--------------------------------------------------------------*/
+.scroll-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+  background-color: #f70000;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.scroll-top i {
+  font-size: 24px;
+  color: #FFE96F;
+  line-height: 0;
+}
+
+.scroll-top:hover {
+  background-color: #000, transparent 20%;
+  color:#000;
+}
+
+.scroll-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* ========================================================
+   CLEAN RESPONSIVE MEDIA BREAKPOINTS
+   ======================================================== */
+
+/* Stack modal columns vertically on tablets/mobiles */
+@media screen and (max-width: 768px) {
+  .modal-body-flex {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .modal-window {
+    padding: 25px 20px;
+  }
+
+  .slide-container {
+    height: 250px;
+  }
+
+  .modal-temple-heading {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+  
+  .page-main-title {
+    font-size: 24px;
+  }
+}

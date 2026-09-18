@@ -1,0 +1,1262 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Darshan</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="../assets/img/logo.png" rel="icon">
+  <link href="../assets/img/logo.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+{#  <link href="../assets/css/main.css" rel="stylesheet">#}
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+
+  <!-- =======================================================
+  * Template Name: Darshan
+  * Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+</head>
+
+<body class="index-page">
+  <header id="header" class="header fixed-top">
+
+    <div class="topbar d-flex align-items-center">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope d-flex align-items-center"><a href="#" style="color:White">info.darshan@gmail.com</a></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span style="color:White" >+91 9876543210</span></i>
+        </div>
+
+
+    <div class="read-in-lang-links">
+    <span class="read-in-lang-label">Read in:</span>
+            <a href="#" class="active-langauge">English</a>
+    <span class="read-in-lang-sep">|</span>
+            <a href="#">हिंदी</a>
+    <span class="read-in-lang-sep">|</span>
+            <a href="#">తెలుగు</a>
+    <span class="read-in-lang-sep">|</span>
+            <a href="#">ଓଡିଆ</a>
+    <span class="read-in-lang-sep">|</span>
+            <a href="#">ગુજરાતી</a>
+    <span class="read-in-lang-sep">|</span>
+            <a href="#">தமிழ்</a>
+  </div>
+      </div>
+    </div><!-- End Top Bar -->
+
+    <div class="branding d-flex align-items-cente">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="/Home" class="logo d-flex align-items-center me-auto me-xl-0">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <img src="../assets/img/logo.png" alt="logo.png"><img src="../assets/img/logo1.PNG" alt="logo1.png">
+        </a>
+
+
+        <!-- 1. The Audio Element -->
+      <audio id="OmAudio" loop src="../assets/audio/Om Chanting.mp3"></audio>
+
+      <!-- 2. The Clickable Icon Button -->
+      <span id="audioToggle" style="font-size: 20px; display: flex; align-items: center; cursor: pointer;">
+          <img src="../assets/img/unMute.svg" alt="unmute.svg" style="height: 24px; width: 24px; margin-left: 7px;">
+      </span>
+      <!--End of audio-->
+
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#" class="active"><strong>HOME</strong><br></a></li>
+            <li><a href="/Aboutus"><strong>ABOUT US</strong></a></li>
+            <li><a href="#menu"><strong>DONATIONS</strong></a></li>
+            <li><a href="#specials"><strong>OUR POJA</strong></a></li>
+            <li><a href="#"><strong>VEDAS</strong></a></li>
+            <li class="dropdown"><a href="#"><strong>SLOKAS</strong> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+
+                <li class="dropdown"><a href="#"><span>Slokas</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <li><a href="https://shlokam.org/index/">Shlokam</a></li>
+                    <li><a href="https://shlokam.org/tag/stotram/">Stotram</a></li>
+                    <li><a href="https://shlokam.org/tag/mantra/">Mantram</a></li>
+                    <li><a href="https://shlokam.org/tag/suktam/">Suktam</a></li>
+                    <li><a href="https://shlokam.org/category/Upanishad/">Upanishads</a></li>
+                  </ul>
+                </li>
+                <li><a href="https://shlokam.org/bhagavad-gita/">Bhagavad Gita</a></li>
+                <li><a href="https://www.valmikiramayan.net/">Ramayanam</a></li>
+                <li><a href="https://www.srimadbhagavatamclass.com/">Bhagavatam</a></li>
+                <li class="dropdown"><a href="#"><span>Anushtanam</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <li><a href="https://stotranidhi.com/puja-vidhanamu/">Pujalu</a></li>
+                    <li><a href="https://stotranidhi.com/vratalu-in-telugu/">Vratalu</a></li>
+                    <li><a href="https://stotranidhi.com/anubandham/sandhya-vandanam-in-telugu/">Sandhya Vandanam</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#"><strong>Books</strong> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="https://stotranidhi.com/books/">Printed Books</a></li>
+                <li><a href="https://stotranidhi.com/ebooks/">E-bOOKS</a></li>
+                <li><a href="https://stotranidhi.com/errata/">Errata</a></li>
+              </ul>
+            </li>
+              <li><a href="/Contactus"><strong>Contact</strong></a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+<!---->
+
+
+
+<!---->
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="../assets/img/Welcome.png" alt="Ganesh" data-aos="fade-in">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 d-flex flex-column align-items-center align-items-lg-start">
+            <h2 data-aos="fade-up" data-aos-delay="100">Welcome to <span>Darshan</span></h2>
+            <p data-aos="fade-up" data-aos-delay="200">गुरूर्ब्रह्मा गुरूर्विष्णुः गुरूर्देवो महेश्वरः ।<br/>
+              गुरूर्साक्षात परब्रह्म तस्मै श्री गुरवे नमः ।।
+              </p>
+            <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
+              <a href="#gallery" class="cta-btn">Live</a>
+              <a href="#specials" class="cta-btn">Special Occasion</a>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex align-items-center justify-content-center mt-5 mt-lg-0">
+            <a href="#gallery" class="glightbox pulsating-play-btn"></a>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-lg-6 order-1 order-lg-2">
+            <!--<img src="https://tinyurl.com/yhues2p3" class="img-fluid about-img" alt=""> -->
+            <img width="640" height="100" src="../assets/img/about.png" alt="about.png" class="img-fluid about-img">
+          </div>
+          <div class="col-lg-6 order-2 order-lg-1 content">
+            <h3>Darshan</h3>
+            <p class="fst-italic">
+              <strong> Darshan </strong>keeps alive the timeless teachings and values of the Vedic tradition
+              and services that promote Sanatana Dharma, enhance Vedic education, and preserve our ancient temples.
+            </p>
+            <p><strong>Pooja Kainkarya</strong> refers to the act of <strong>serving the deity through worship</strong>. It involves performing various ritualistic duties with dedication and devotion, typically as a part of temple service.</p>
+
+
+              <li><i class="bi bi-check2-all"></i><strong>Dhoopa (धूप):</strong></li>
+              <span>Dhoopa refers to the fragrant smoke created by burning incense sticks or powdered substances like sandalwood.</span>
+
+              <li><i class="bi bi-check2-all"></i><strong>Deepa (दीप):</strong></li>
+               <span>The light represents the removal of ignorance and darkness, symbolizing spiritual enlightenment. Offering light is considered a way of showing reverence and inviting divine blessings into our's life.</span>
+
+              <li><i class="bi bi-check2-all"></i> <strong>Naivedyam (नैवेद्यम्):</strong></li>
+                <span>Naivedyam represents the offering of food to the divine as an act of devotion and gratitude.</span>
+
+
+              <div class="elementor-widget-container">
+                  <a href="/Aboutus">
+                      <img loading="lazy" decoding="async" width="100" height="100" src="../assets/img/arrow.png"  alt="arrow.png">
+                  </a>
+              </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Slide show-->
+    <section class="puja-section" style="background-color: #f70000;">
+      <div class="puja-header">
+          <h2 style="color: #ffffff;">State Visit</h2>
+          <p>Select your destination throughout the India</p>
+      </div>
+
+      <div class="carousel-container">
+          <button class="scroll-button left" onclick="scrollLeft()">&#8592;</button>
+          <div class="carousel">
+              <div class="card">
+                  <div class="card-image">
+                      <a href="/Andhra Pradesh" target="_blank"><img src="../assets/img/Andhra pradesh.jpg" alt="Andhra Pradesh"></a>
+                  </div>
+                  <p>Andhra Pradesh</p>
+              </div>
+              <div class="card">
+                  <div class="card-image">
+                    <a href="/Telangana" target="_blank"><img src="../assets/img/Telangana.jpg" alt="Telangana"></a>
+                  </div>
+                  <p>Telangana</p>
+              </div>
+              <div class="card">
+                  <div class="card-image">
+                    <a href="/Karnataka" target="_blank"><img src="../assets/img/Karnataka.jpg" alt="Karnataka"></a>
+                  </div>
+                  <p>Karnataka</p>
+              </div>
+              <div class="card">
+                  <div class="card-image">
+                      <a href="/Tamilnadu" target="_blank"><img src="../assets/img/Tamilnadu.jpg" alt="Tamilnadu"></a>
+                  </div>
+                  <p>Tamilnadu</p>
+              </div>
+              <div class="card">
+                  <div class="card-image">
+                      <a href="/Kerala" target="_blank"><img src="../assets/img/Kerala.jpg" alt="Kerala"></a>
+                  </div>
+                  <p>Kerala</p>
+              </div>
+              <div class="card">
+                <div class="card-image">
+                    <a href="/Odisha" target="_blank"><img src="../assets/img/Odisha.jpg" alt="Odisha"></a>
+                </div>
+                <p>Odisha</p>
+              </div>
+              <div class="card">
+                <div class="card-image">
+                    <a href="/Maharastra" target="_blank"><img src="../assets/img/Maharastra.jpg" alt="Maharastra"></a>
+                </div>
+                <p>Maharastra</p>
+              </div>
+              <div class="card">
+                <div class="card-image">
+                    <img src="#" alt="Gujarat">
+                </div>
+                <p>Gujarat</p>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="#" alt="Madhya Pradesh">
+                </div>
+                <p>Madhya Pradesh</p>
+            </div> <div class="card">
+              <div class="card-image">
+                  <img src="#" alt="Rajastan">
+              </div>
+              <p>Rajastan</p>
+          </div>
+          <div class="card">
+              <div class="card-image">
+                  <img src="#" alt="Himachal Pradesh">
+              </div>
+              <p>Himachal Pradesh</p>
+          </div>
+          </div>
+          <button class="scroll-button right" onclick="scrollRight()">&#8594;</button>
+      </div>
+  </section>
+  <!--Stats count cards-->
+
+  <section class="stats-section"  style="background-image:url('../assets/img/about-bg.jpg') ;">
+    <div class="stat-card" data-target="200">
+      <img src="../assets/img/Services.png" alt="img">
+      <h2 class="count">108</h2>
+      <p class="title">Unique Services</p>
+      <p class="description">Visiting a Hindu temple can be a very enriching experience for those inter-ested in understanding other realitiesand visions of the world. </p>
+    </div>
+    <div class="stat-card yellow" data-target="9" style="text-decoration-color: black;">
+      <img src="../assets/img/Experience.png" alt="img">
+      <h2 class="count">0</h2>
+      <p class="title">Years of Experience</p>
+      <p class="description"> The temple is a place where you can find peace. There we receive a renewed dedication to the gospel and a strengthened…experience the sanctifying influence of the Spirit of the Lord.</p>
+    </div>
+    <div class="stat-card" data-target="50">
+      <img src="../assets/img/Pandits.png" alt="img">
+      <h2 class="count">0</h2>
+      <p class="title">Pandits</p>
+      <p class="description">Pandits are the people who officiate at pujas (ritual prayers) in Vadas & Upanishads.</p>
+    </div>
+    <div class="stat-card yellow" data-target="500">
+      <img src="../assets/img/Darshanam.png" alt="img">
+      <h2 class="count">108</h2>
+      <p class="title">Seva and Darshanam</p>
+      <p class="description">Darshanam is the auspicious sight of a deity that has immense spiritual significance. The auspicious sight of the deity cleanses the soul and blesses the devotee.</p>
+    </div>
+  </section>
+
+<!--End of Stats count cards-->
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="why-us section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>MUKTI MARGA</h2>
+        <p>Choose Your path</p>
+        <!--<img src="https://www.sripuram.org/static/sripuram-org/motif-1.webp" alt="">   -->
+      </div><!-- End Section Title -->
+    </section>
+
+    <section9>
+      <div class="box">
+        <div class="card9">
+          <div class="imgBx">
+             <a href="/Jyotirlingam"><img src="../assets/img/jyotirlingas.jpg" alt="images"> </a>
+          </div>
+          <div class="details">
+              <h2>Jothiramalingam<br><span> </span></h2>
+          </div>
+        </div>
+
+         <div class="card9">
+           <div class="imgBx">
+              <a href="/Sakthipeetam"><img src="../assets/img/shakti-peethas.jpg" alt="images"></a>
+           </div>
+           <div class="details">
+              <h2>Sakthi Peetam<br>
+                <span> </span>
+
+                </h2>
+            </div>
+         </div>
+
+         <div class="card9">
+           <div class="imgBx">
+            <a href=""><img src="../assets/img/Guru.jpg " alt="images"></a>
+           </div>
+           <div class="details">
+              <h2>Guru Devasthanam<br>
+                <span> </span></h2>
+            </div>
+         </div>
+
+    </div>
+
+
+
+    </section9><!-- /Choose Your path -->
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>All Types of Services</p>
+      </div><!-- End Section Title -->
+
+      <div class="container isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul class="menu-filters isotope-filters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-Seva">Seva</li>
+              <li data-filter=".filter-Donation">Donation</li>
+              <li data-filter=".filter-Prasadam">Prasadam</li>
+            </ul>
+          </div>
+        </div><!-- Menu Filters -->
+
+        <div class="row isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-6 menu-item isotope-item filter-Seva">
+            <img src="https://srikanipakadevasthanam.org/static/media/seva-and-darshanam.f94fc917.svg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Darshanam</a><span>₹108.00- ₹10116.00</span>
+            </div>
+            <div class="menu-ingredients">
+              Darshanam is the auspicious sight of a deity that has immense spiritual significance. The auspicious sight of the deity cleanses the soul and blesses the devotee.
+            </div>
+          </div><!-- Menu Item -->
+
+          <div class="col-lg-6 menu-item isotope-item filter-Prasadam">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTksHPtp5BygDNlNGHxNTS0MkNcmuLKtytfng&s" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Laddu</a><span>₹50.00 - ₹200.00</span>
+            </div>
+            <div class="menu-ingredients">
+              Tirumala Laddu, is a sweet offered as prasadam at the Venkateswara Temple in Tirupati, Andhra Pradesh. The temple has been offering the laddu to devotees for over 300 years.
+            </div>
+          </div><!-- Menu Item -->
+
+          <div class="col-lg-6 menu-item isotope-item filter-Seva">
+            <img src="https://www.svgrepo.com/show/396643/hindu-temple.svg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Daily Sevas</a><span>₹300 - ₹10,000</span>
+            </div>
+            <div class="menu-ingredients">
+              Selfless service; the action or practice of rendering service to others, typically in the form of voluntary work, mutual aid.
+            </div>
+          </div><!-- Menu Item -->
+
+          <div class="col-lg-6 menu-item isotope-item filter-Donation">
+            <img src="https://srikanipakadevasthanam.org/static/media/donation.b54be447.svg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Donations</a><span>Up to You</span>
+            </div>
+            <div class="menu-ingredients">
+              e-Hundi allows donations from people across the globe for the welfare of the sacred temple. Devotees can offer their donations online.
+            </div>
+          </div><!-- Menu Item -->
+
+          <div class="col-lg-6 menu-item isotope-item filter-Prasadam">
+            <img src="https://www.palani.in/wp-content/uploads/2018/12/palani_panchamirtham-1.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Palani Panchamirtham</a><span>₹100.00</span>
+            </div>
+            <div class="menu-ingredients">
+              Panchamirtham is scrumptious and can be preserved for long periods of time. The Devasthanam prepares panchamirtham using modern machines in a healthy and pure manner. Panchamirtham can be directly bought from the Devasthanam.
+            </div>
+          </div><!-- Menu Item -->
+
+          <div class="col-lg-6 menu-item isotope-item filter-Seva">
+            <img src="https://img.favpng.com/3/10/17/pandit-puja-ji-vedas-astrology-png-favpng-NJMPeGqh3ZHcs78e35XTDaPij_t.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Homan</a><span>₹5000.00 - ₹10,000.00</span>
+            </div>
+            <div class="menu-ingredients">
+              Homam is performed to invoke the blessings of specific gods and goddesses, to atone for sins, and to acquire merit.
+            </div>
+          </div><!-- Menu Item -->
+
+          <div class="col-lg-6 menu-item isotope-item filter-Donation">
+            <img src="https://sitarafoods.com/wp-content/uploads/2022/07/02-42.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Cow Ghee</a><span>₹700 lt</span>
+            </div>
+            <div class="menu-ingredients">
+              Ghee is used in Vedic worship of deities, such as in the aarti, or offering of a ghee lamp.
+            </div>
+          </div><!-- Menu Item -->
+
+          <div class="col-lg-6 menu-item isotope-item filter-Donation">
+            <img src="https://images.picxy.com/cache/2019/10/18/5f73187a735d48fb8d3f128a64dff474.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Food Donation</a><span> ₹5000 - ₹10,000.00  </span>
+            </div>
+            <div class="menu-ingredients">
+              Hindu temples have Prasad Halls where people can have food without being questioned about their caste, religion, or race.             </div>
+          </div><!-- Menu Item -->
+
+          <div class="col-lg-6 menu-item isotope-item filter-Prasadam">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4zuL0POxmaxlhQH_3u2OqNT6taZI1PqmrqQ&s" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Sankudi mahaprasad</a><span>₹100.00 - ₹500.00</span>
+            </div>
+            <div class="menu-ingredients">
+              This Mahaprasadam has varities of dry items from the 56 bhog like Khaja , Laddu , Barfi etc. in Lord Jagannath in Puri Temple.
+            </div>
+          </div><!-- Menu Item -->
+
+          <div class="col-lg-6 menu-item isotope-item filter-Donation">
+            <img src="https://www.agniban.com/wp-content/uploads/2021/12/sona.webp" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Gold & Silver Ornaments</a><span>Up to You</span>
+            </div>
+            <div class="menu-ingredients">
+              A gold/ silver donation is regarded as one of the most respected Daan. In this article, we bring you the various types of Daan involving gold donation according to the ancient Hindu texts. These Daans are part of the 16<sup>th</sup> Maha Daan mentioned in the Vedic texts.
+            </div>
+          </div><!-- Menu Item -->
+
+
+        </div><!-- Menu Container -->
+
+      </div>
+
+    </section><!-- /Menu Section -->
+
+    <!-- Specials Section -->
+    <section id="specials" class="specials section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Specials</h2>
+        <p>Specials occasions</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#specials-tab-1">Ugadi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-2">Karthigai Deepam</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-3">Makaravilakku</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-4">Puri Rata Yatra</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-5">Maha Kumbh Mela</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-6">Kavadi festival</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-7">Maha Shivratri</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-8">Sri Rama Navami</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="specials-tab-1">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Ugadi</h3>
+                    <p class="fst-italic">Ugadi marks the Hindu lunar new year in Karnataka, Andhra Pradesh, and Telangana. The defining speciality of the festival is Ugadi Pachadi, a unique chutney-like dish made with six ingredients (neem, jaggery, tamarind, raw mango, salt, and chili) representing the six flavors—and emotional realities—of life.</p>
+                    <p><strong>Symbolism:</strong> The mixture of sweet (joy), bitter (sorrow), sour (challenges), tangy (surprises), salty (fear), and spicy (anger) reminds people to accept all of life's experiences with an even mind.</p>
+                    <p><strong>Festive Foods:</strong> Along with Pachadi, homes feature special dishes like Bobbatlu, Pulihora, and Vada.</p>
+                    <p><strong>Decorations:</strong> Doors are draped with Torana (mango leaves and flowers) to invite prosperity, and colorful rangoli designs are drawn at entrances.</p>
+                    <p><strong>Panchanga Shravanam:</strong> A key ritual is listening to the reading of the Panchanga (astronomical almanac) to know the astrological predictions for the upcoming year.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <!--<img src="assets/img/Specials/Ugadi.jpg" alt="" class="img-fluid"> -->
+                    <img src="../assets/img/Specials/Ugadi1.png" alt="" class="img-fluid">
+                    <a href="#"><u><i>For more info →</i> </u></a></div>
+                </div>
+              </div>
+              <div class="tab-pane" id="specials-tab-2">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>The Karthigai Deepam Festival</h3>
+                    <p class="fst-italic">The Karthigai Deepam festival at the Arulmigu Arunachaleswarar Temple in Thiruvannamalai, Tamil Nadu.</p>
+                    <p>This festival is celebrated on the full moon day (Pournami) of the Tamil month of Karthigai, The Arulmigu Arunachaleswarar Temple is dedicated to Lord Shiva and is one of the Pancha Bhoota Stalams, representing the element of fire (Agni). The temple also hosts a 10-day festival called Maha Deepam or Annamalai Deepam. </p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="../assets/img/Specials/Maha-Deepam.jpg" alt="" class="img-fluid">
+                    <a href="https://thiruvannamalai.in/tiruvannamalai-temple/tiruvannamalai-karthigai-deepam/"><u><i>For more info →</i> </u></a> </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="specials-tab-3">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Makaravilakku Sabarimala</h3>
+                    <p class="fst-italic">The Makara Jyothi, also known as the Makaravilakku, is a celestial event that happens annually at the Sabarimala Temple in Kerala on Makara Sankranti.</p>
+                    <p> It is a divine light that appears when the sun sets over the Ponnambalamedu hills, casting a visible light from the temple premises.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="../assets/img/Specials/Jyothi.JPG" alt="" class="img-fluid">
+                    <a href="https://sabarimala.kerala.gov.in/"><u><i>For more info →</i> </u></a></div>
+                </div>
+              </div>
+              <div class="tab-pane" id="specials-tab-4">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Puri Rath Yatra</h3>
+                    <p class="fst-italic">This is the largest and oldest Hindu chariot festival, and is held in the city of Puri, Odisha.</p>
+                    <p>The festival features three massive wooden chariots carrying the deities Jagannath, Balabhadra, and Subhadra. The chariots are pulled by devotees on a grand avenue to the Gundicha Temple, where the deities stay for a week. The festival symbolizes Lord Jagannath's visit to his maternal aunt's home. </p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="../assets/img/Specials/Ratham.jpg" alt="" class="img-fluid">
+                    <a href="https://www.shreejagannatha.in/"><u><i>For more info →</i> </u></a></div>
+                </div>
+              </div>
+              <div class="tab-pane" id="specials-tab-5">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Maha Kumbh Mela - "Festival of the sacred pitcher"</h3>
+                    <p class="fst-italic">The world's largestpeaceful congregation of pilgrims on earth, during which participants bathe or take a dip in a sacred river. It's held every 12 years at one of four sacred sites in India, and the location rotates between the sites:</p>
+                     <p><strong>Prayagraj, Uttar Pradesh:</strong> The Maha Kumbh Mela is held here, at the confluence of the Ganges, Yamuna, and Saraswati rivers.</p>
+                     <p><strong>Haridwar, Uttarakhand:</strong> Held on the banks of the Ganges.</p>
+                     <p><strong>Ujjain, Madhya Pradesh:</strong> Held on the banks of the Shipra.</p>
+                     <p><strong>Nashik, Maharashtra:</strong> Held on the banks of the Godavari.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="../assets/img/Specials/Kumbamela1.jpg" alt="" class="img-fluid">
+                    <img src="../assets/img/Specials/Kumbamela2.jpg" alt="" class="img-fluid">
+                    <a href="https://kumbh.gov.in/"><u><i>For more info →</i> </u></a> </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="specials-tab-6">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Arulmigu Subramaniya Swamy Temple in Tiruchendur & the Sri Subramanya Swamy Temple in Tiruttani</h3>
+                    <p><strong>Arulmigu Subramaniya Swamy Temple in Tiruchendur:</strong> This temple hosts a spectacular Kavadi festival that combines religion, sacrifice, tradition, and splendor.
+                      </p>
+                    <p><strong>Sri Subramanya Swamy Temple in Tiruttani:</strong>
+                      This temple hosts the Aadi Krithigai festival, which includes a Kavadi festival. The festival is celebrated with a three-day float festival and attracts over 400,000 devotees. Devotees carry a Kavadi, which is a semicircular wooden log with offerings tied to both ends, and climb the 365 steps of a hillock at the temple.
+                      </p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="../assets/img/Specials/Kavadi.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="specials-tab-7">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Maha Shivratri</h3>
+                    <p><strong>Observing a Fast (Vrat): </strong>Many devotees abstain from food and water (Nirjala Vrat) or consume only fruits and milk (Phalahari Vrat) to detoxify the body and calm the mind.
+                      </p>
+                    <p><strong>Night Vigil (Jagaran):</strong>It is traditional to stay awake all night, often sitting with a straight spine to benefit from the planet's unique energy alignment during this time.
+                      </p>
+                    <p><strong>Abhishekam & Puja:</strong>Worshipers bathe the Shivalinga with sacred offerings like water, milk, honey, and ghee. Each represents a different blessing, such as purity or strength.
+                      </p>
+                    <p><strong>Chanting & Meditation:</strong> Devotees chant "Om Namah Shivaya" or perform the Mahamrityunjaya Mantra throughout the night to focus their devotion.
+                      </p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="../assets/img/Specials/Shivarathi1.jpg" alt="" class="img-fluid">
+                    <img src="../assets/img/Specials/Shivarathi2.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="specials-tab-8">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Sri Rama Navami</h3>
+                    <p>Sri Rama Navami is a major Hindu festival celebrating the birth of Lord Rama, the seventh avatar of Lord Vishnu. Falling on the ninth day of the bright half of the lunar month of Chaitra (March–April), it marks the culmination of the spring Chaitra Navaratri.</p>
+                    <p><strong>Prasadam:</strong> Devotees observe a strict fast throughout the day, breaking it at sunset with special festive foods like Panakam (a sweet jaggery drink), and moong dall</p>
+                    <p><strong>Temple Rituals:</strong> Temples are elaborately decorated, and idols of Rama, Sita, Lakshmana, and Hanuman are often carried in grand processions.</p>
+                    <p><strong>Scriptural Recitation: </strong> Devotees read passages from the Ramayana and Rama Charitamanas, participate in bhajans (devotional songs), and listen to spiritual discourses.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="../assets/img/Specials/Sri Rama Navami.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Specials Section -->
+
+    <!-- Events Section -->
+<!--    <section id="events" class="events section"> -->
+<!--
+      <img class="slider-bg" src="assets/img/events-bg.jpg" alt="" data-aos="fade-in">
+
+      <div class="container">
+
+        <div class="swiper init-swiper" data-aos="fade-up" data-aos-delay="100">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="row gy-4 event-item">
+                <div class="col-lg-6">
+                  <img src="assets/img/events-slider/events-slider-1.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Birthday Parties</h3>
+                  <div class="price">
+                    <p><span>$189</span></p>
+                  </div>
+                  <p class="fst-italic">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+                    <li><i class="bi bi-check2-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
+                    <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+                  </ul>
+                  <p>
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="row gy-4 event-item">
+                <div class="col-lg-6">
+                  <img src="assets/img/events-slider/events-slider-2.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Private Parties</h3>
+                  <div class="price">
+                    <p><span>$290</span></p>
+                  </div>
+                  <p class="fst-italic">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+                    <li><i class="bi bi-check2-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
+                    <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+                  </ul>
+                  <p>
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="row gy-4 event-item">
+                <div class="col-lg-6">
+                  <img src="assets/img/events-slider/events-slider-3.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Custom Parties</h3>
+                  <div class="price">
+                    <p><span>$99</span></p>
+                  </div>
+                  <p class="fst-italic">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+                    <li><i class="bi bi-check2-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
+                    <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+                  </ul>
+                  <p>
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    -->
+    <!-- </section>/Events Section -->
+
+    <!-- Book A Table Section -->
+    <section id="book-a-table" class="book-a-table section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>RESERVATION</h2>
+    <p>Book tickets to your Destination</p>
+  </div>
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <form action="/templates/forms/contact.php" method="post" class="php-email-form">
+      <div class="row gy-4">
+
+        <div class="col-lg-4 col-md-6">
+          <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <input type="text" class="form-control" name="phone" placeholder="Your Phone" required>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <input type="date" name="date" class="form-control" required>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <input type="time" class="form-control" name="time" required>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <select class="form-control" name="destination" required style="background-color:#FFE96F;">
+            <option disabled selected>Select your destination</option>
+            <option>Andhra Pradesh</option>
+            <option>Telangana</option>
+            <option>Tamilnadu</option>
+            <option>Karnataka</option>
+            <option>Kerala</option>
+          </select>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <input type="number" class="form-control" name="people" placeholder="No of people" required>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <input type="text" class="form-control" name="idcard" placeholder="Identity Card Number" required>
+        </div>
+
+      </div>
+
+      <div class="form-group mt-3">
+        <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+      </div>
+
+      <div class="text-center mt-3">
+        <button type="submit">Book Tickets</button>
+      </div>
+
+    </form>
+
+  </div>
+
+</section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials section">
+
+          <!-- Section Title -->
+          <div class="container section-title" data-aos="fade-up">
+            <h2><strong>Dharmo Rakshati Rakshitah</strong></h2>
+            <p>According to Dharma in Bhagavad Gita</p>
+          </div><!-- End Section Title -->
+
+          <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="swiper init-swiper" data-speed="600" data-delay="5000" data-breakpoints="{ &quot;320&quot;: { &quot;slidesPerView&quot;: 1, &quot;spaceBetween&quot;: 40 }, &quot;1200&quot;: { &quot;slidesPerView&quot;: 3, &quot;spaceBetween&quot;: 40 } }">
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  },
+                  "breakpoints": {
+                    "320": {
+                      "slidesPerView": 1,
+                      "spaceBetween": 40
+                    },
+                    "1200": {
+                      "slidesPerView": 3,
+                      "spaceBetween": 20
+                    }
+                  }
+                }
+              </script>
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                <p>
+                  <i class=" bi bi-quote quote-icon-left"></i>
+                    <span>धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः |
+                      मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय </span><br/>
+                      <span>dharma-kṣhetre kuru-kṣhetre samavetā yuyutsavaḥ
+                        māmakāḥ pāṇḍavāśhchaiva kimakurvata sañjaya</span>
+                        <i class="bi bi-quote quote-icon-right"></i>
+                        <audio controls="" controlslist="nodownload" src="https://www.holy-bhagavad-gita.org/media/audios/001_001.mp3">
+                        </audio>
+                    </p>
+                    <img src="../assets/img/testimonials/gita-01.jpg" class="testimonial-img" alt="">
+                    <h3>Bhagavad Gita - 1.1</h3>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <p>
+                      <i class="bi bi-quote quote-icon-left"></i>
+                      <span>श्रेयान्स्वधर्मो विगुण: परधर्मात्स्वनुष्ठितात् |
+                        स्वधर्मे निधनं श्रेय: परधर्मो भयावह: ||</span><br/>
+                        <span>śhreyān swa-dharmo viguṇaḥ para-dharmāt sv-anuṣhṭhitāt
+                          swa-dharme nidhanaṁ śhreyaḥ para-dharmo bhayāvahaḥ</span>
+                      <i class="bi bi-quote quote-icon-right"></i>
+                      <audio controls="" controlslist="nodownload" src="https://www.holy-bhagavad-gita.org/media/audios/003_035.mp3">
+                    </audio>
+                    </p>
+                    <img src="../assets/img/testimonials/gita-02.jpg" class="testimonial-img" alt="">
+                    <h3>Bhagavad Gita - 3.35</h3>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <p>
+                      <i class="bi bi-quote quote-icon-left"></i>
+                      <span>श्रेयान्स्वधर्मो विगुण: परधर्मात्स्वनुष्ठितात् |
+                        स्वभावनियतं कर्म कुर्वन्नाप्नोति किल्बिषम् || </span><br/>
+                        <span>śhreyān swa-dharmo viguṇaḥ para-dharmāt sv-anuṣhṭhitāt
+                          svabhāva-niyataṁ karma kurvan nāpnoti kilbiṣham</span>
+                      <i class="bi bi-quote quote-icon-right"></i>
+                    <audio controls="" controlslist="nodownload" src="https://www.holy-bhagavad-gita.org/media/audios/018_047.mp3">
+                    </audio>
+                  </p>
+                    <img src="../assets/img/testimonials/gita-03.jpg" class="testimonial-img" alt="">
+                    <h3>Bhagavad Gita - 18.47</h3>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <p>
+                      <i class="bi bi-quote quote-icon-left"></i>
+                      <span>कर्मण्येवाधिकारस्ते मा फलेषु कदाचन |
+                        मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ||</span><br/>
+                        <span>karmaṇy-evādhikāras te mā phaleṣhu kadāchana
+                          mā karma-phala-hetur bhūr mā te saṅgo ’stvakarmaṇi</span>
+                      <i class="bi bi-quote quote-icon-right"></i>
+                    <audio controls="" controlslist="nodownload" src="https://www.holy-bhagavad-gita.org/media/audios/002_047.mp3">
+                    </audio>
+                  </p>
+                    <img src="../assets/img/testimonials/gita-04.jpg" class="testimonial-img" alt="">
+                    <h3>Bhagavad Gita - 2.47</h3>
+                  </div>
+                </div><!-- End testimonial item -->
+
+                <div class="swiper-slide">
+                  <div class="testimonial-item">
+                    <p>
+                      <i class="bi bi-quote quote-icon-left"></i>
+                      <span>यदा यदा हि धर्मस्य ग्लानिर्भवति भारत |
+                        अभ्युत्थानमधर्मस्य तदात्मानं सृजाम्यहम् || </span><br/>
+                      <span>yadā yadā hi dharmasya glānir bhavati bhārata
+                        abhyutthānam adharmasya tadātmānaṁ sṛijāmyaham</span>
+                      <i class="bi bi-quote quote-icon-right"></i>
+                      <audio controls="" controlslist="nodownload" src="https://www.holy-bhagavad-gita.org/media/audios/004_007.mp3">
+                      </audio>
+                    </p>
+                    <img src="../assets/img/testimonials/gita-05.jpg" class="testimonial-img" alt="">
+                    <h3>Bhagavad Gita - 4.7</h3>
+                  </div>
+                </div><!-- End testimonial item -->
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+          </div>
+
+        </section><!-- /Testimonials Section -->
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>LIVE</h2>
+        <p>Live from Various Places Temples</p>
+      </div><!-- End Section Title -->
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-0">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+                  <iframe src="https://www.youtube.com/embed/PSaY_rNVZvY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  <h5> &nbsp;&nbsp;Live from Siddhivinayak </h5>
+            </div>
+          </div><!-- End Gallery Item -->
+
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+                  <iframe src="https://www.youtube.com/embed/F9wKH93kBig" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+                  <h5> &nbsp;&nbsp;Live from  Shirdi Sai Baba</h5>
+            </div>
+          </div><!-- End Gallery Item -->
+
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+                  <iframe src="https://www.youtube.com/embed/2JlVwEQJTVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+                  <h5> &nbsp;&nbsp;Live from Kashi Vishwanath </h5>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+                  <iframe src="https://www.youtube.com/embed/eBikK8yBOtI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+                  <h6> &nbsp;&nbsp;Live from Shree Mahakaleshwar </h6>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+                  <iframe src="https://www.youtube.com/embed/kaVrPCxg_us" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+                  <h6> &nbsp;&nbsp;ISKCON Sri Radha Krishna Temple </h6>
+            </div>
+          </div>
+
+            <div class="col-lg-3 col-md-4">
+              <div class="gallery-item">
+                <iframe src="https://www.youtube.com/embed/yMkfzTWcvF4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+                <h6> &nbsp;&nbsp;Live from Kolhapur Mahalaxmi </h6>
+              </div>
+            </div>
+
+              <div class="col-lg-3 col-md-4">
+                <div class="gallery-item">
+                      <iframe src="https://www.youtube.com/embed/4vqorGcDC3Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+                      <h6> &nbsp;&nbsp;Live from Vitthal Rukmini mandir </h6>
+                </div>
+              </div>
+
+                <div class="col-lg-3 col-md-4">
+                  <div class="gallery-item">
+                        <iframe src="https://www.youtube.com/embed/7Iq5qyabo8M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+                        <h6> &nbsp;&nbsp;Live from Ram Mandir mandir </h6>
+                </div>
+                </div>
+<!--
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-8.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+           End Gallery Item -->
+
+
+        </div>
+
+      </div>
+
+    </section><!-- /Gallery Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Contact Us</p>
+      </div><!-- End Section Title -->
+
+      <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
+       <!-- <iframe style="border:0; width: 100%; height: 400px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>-->
+        <iframe style="border:0; width: 100%; height: 400px;" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1623.0262259740832!2d78.53291912401599!3d17.456916431418758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTfCsDI3JzI0LjkiTiA3OMKwMzInMDIuOSJF!5e1!3m2!1sen!2sin!4v1731742944122!5m2!1sen!2sin" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div><!-- End Google Maps -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Location</h3>
+                <p>Hyderabad, Telangana, India</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Open Hours</h3>
+                <p>Monday-Friday:<br>10:00 AM - 18:00 PM</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Call Us</h3>
+                <p>+91 9876543210</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Us</h3>
+                <p>info@darshan.com</p>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+
+          <div class="col-lg-8">
+            <form action="/templates/forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="#" class="logo d-flex align-items-center">
+            <span class="sitename"><img src="../assets/img/logo2.png" alt=""></span>
+        </a>
+
+          <div class="footer-contact pt-3">
+            <p>Hyderabad</p>
+            <p>Telangana, India</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+91 9876543210</span></p>
+            <p><strong>Email:</strong> <span>info@darshan.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="/Aboutus">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="https://shlokam.org/index/" target="_blank">Slokas</a></li>
+            <li><a href="#">Vedas</a></li>
+            <li><a href="https://stotranidhi.com/books/" target="_blank">Books</a></li>
+            <li><a href="https://shlokam.org/bhagavad-gita/" target="_blank">Bhagavad Gita</a></li>
+            <li><a href="https://www.valmikiramayan.net/" target="_blank">Ramayanam</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>Our Newsletter</h4>
+          <p>Subscribe to our newsletter and receive the latest news about our Darshan and services!</p>
+          <form action="forms/newsletter.php" method="post" class="php-email-form">
+            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Darshan - 2024</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="">Subbu</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <button href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></button>
+
+  <!-- Preloader -->
+{#  <div id="preloader"></div>#}
+
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+    <script src="{% static 'js/main.js' %}"></script>
+
+ <!--
+  <script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+</script>
+-->
+
+</body>
+
+</html>

@@ -1,0 +1,1119 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Telangana</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+ <link href="../assets/img/logo.png" rel="icon">
+  <link href="../assets/img/logo.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <!--<link href="assets/css/main.css" rel="stylesheet">-->
+{#  <link href="../assets/css/states.css" rel="stylesheet">#}
+      <link href="{% static 'css/states.css' %}" rel="stylesheet">
+
+
+  <!-- =======================================================
+  * Template Name: Restaurantly
+  * Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+</head>
+
+    <body class="index-page"> 
+<!--        <header id="header" class="header fixed-top">
+      
+          <div class="topbar d-flex align-items-center">
+            <div class="container d-flex justify-content-center justify-content-md-between">
+              <div class="contact-info d-flex align-items-center">
+                <i class="bi bi-envelope d-flex align-items-center"><a href="#" style="color:White">contact@darshan.com</a></i>
+                <i class="bi bi-phone d-flex align-items-center ms-4"><span style="color:White" >+91 9876543210</span></i>
+              </div>
+              <div class="languages d-none d-md-flex align-items-center">
+                <ul>
+                  <li>En</li>
+                  <li><a href="#">Te</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      
+          <div class="branding d-flex align-items-cente">
+      
+            <div class="container position-relative d-flex align-items-center justify-content-between">
+              <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+                 <img src="https://ih1.redbubble.net/image.1909441780.5259/st,small,507x507-pad,600x600,f8f8f8.u2.jpg">
+                <img src="assets/img/logo1.png" alt="">
+              </a>
+      
+             
+              <nav id="navmenu" class="navmenu">
+                <ul>
+                  <li><a href="#" class=""><strong>HOME</strong><br></a></li>
+                  <li><a href="aboutus.html"><strong>ABOUT US</strong></a></li>
+                  <li><a href="#"><strong>DONATIONS</strong></a></li>
+                  <li><a href="#"><strong>OUR POJA</strong></a></li>
+                  <li><a href="#"><strong>VEDAS</strong></a></li>
+                  <li class="dropdown"><a href="#"><strong>SLOKAS</strong> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                      
+                      <li class="dropdown"><a href="#"><span>Slokas</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                          <li><a href="https://shlokam.org/index/">Shlokam</a></li>
+                          <li><a href="https://shlokam.org/tag/stotram/">Stotram</a></li>
+                          <li><a href="https://shlokam.org/tag/mantra/">Mantram</a></li>
+                          <li><a href="https://shlokam.org/tag/suktam/">Suktam</a></li>
+                          <li><a href="https://shlokam.org/category/Upanishad/">Upanishads</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="https://shlokam.org/bhagavad-gita/">Bhagavad Gita</a></li>
+                      <li><a href="https://www.valmikiramayan.net/">Ramayanam</a></li>
+                      <li><a href="https://www.srimadbhagavatamclass.com/">Bhagavatam</a></li>
+                      <li class="dropdown"><a href="#"><span>Anushtanam</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                          <li><a href="https://stotranidhi.com/puja-vidhanamu/">Pujalu</a></li>
+                          <li><a href="https://stotranidhi.com/vratalu-in-telugu/">Vratalu</a></li>
+                          <li><a href="https://stotranidhi.com/anubandham/sandhya-vandanam-in-telugu/">Sandhya Vandanam</a></li>
+                        </ul>
+                      </li>  
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a href="#"><strong>Books</strong> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                      <li><a href="https://stotranidhi.com/books/">Printed Books</a></li>
+                      <li><a href="https://stotranidhi.com/ebooks/">E-bOOKS</a></li>
+                      <li><a href="https://stotranidhi.com/errata/">Errata</a></li>
+                    </ul>
+                  </li>  
+                    <li><a href="#contact"><strong>Contact</strong></a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+              </nav>
+
+            </div>
+      
+          </div>
+      
+        </header> -->
+            <!---->
+      <div style="background-color: #f70000;"><br/>
+        <h1 style="text-align: center; color: #f3ea3c"><strong>*** TELANGANA ***</strong></h1><br/>
+      </div>
+      <div>
+           <a style="color: #f70000;" href="/Home">Home  >>></a> Telangana
+      </div><br/>
+
+            <div class="container">
+               <!-- Card_1 -->
+              <div class="card" id="showSliderBtn1">
+                <img src="../assets/img/States/TG/1.0.jpg" alt="Card Image 1">
+                <div class="card-content">
+                  <h3 class="card-title">shop1</h3>
+                  <p class="card-description"><strong>Alampur Jogulamba Temple</strong></p>
+                  <button href="#" class="card-button">View More</button>
+                </div>
+              </div>
+              <!-- Card_2 -->
+              <div class="card" id="showSliderBtn2">
+                <img src="../assets/img/States/TG/2.0.jpg" alt="Card Image 2">
+                <div class="card-content">
+                  <h3 class="card-title">Shop 2</h3>
+                  <p class="card-description"><strong>Basara Gnana Saraswathi Temple</strong></p>
+                  <button href="#" class="card-button">View More</button>
+                </div>
+              </div>
+                <!-- Card_3 -->          
+              <div class="card" id="showSliderBtn3">
+                <img src="../assets/img/States/TG/3.0.jpg" alt="Card Image 3">
+                <div class="card-content">
+                  <h3 class="card-title">Shop 3</h3>
+                  <p class="card-description"><strong>Bhadrachalam Sri Rama temple</strong></p>
+                  <button href="#" class="card-button">View More</button>
+                </div>
+              </div>
+          
+              <!-- card 4 -->
+              <div class="card" id="showSliderBtn4">
+                <img src="../assets/img/States/TG/4.0.jpg" alt="Card Image 4">
+                <div class="card-content">
+                  <h3 class="card-title">Shop 4</h3>
+                  <p class="card-description"><strong>Chaya Someswara Swamy Temple </strong></p>
+                  <button href="#" class="card-button">View More</button>
+                </div>
+              </div>
+              <!-- card 5 -->
+              <div class="card" id="showSliderBtn5">
+                <img src="../assets/img/States/TG/5.0.jpg" alt="Card Image 5">
+                <div class="card-content">
+                  <h3 class="card-title">Shop 5</h3>
+                  <p class="card-description"><strong>Chilkur Balaji Temple</strong></p>
+                  <button href="#" class="card-button">View More</button>
+                </div>
+              </div>
+              <!-- card 6 -->
+              <div class="card" id="showSliderBtn6">
+                <img src="../assets/img/States/TG/6.0.jpg" alt="Card Image 6">
+                <div class="card-content">
+                  <h3 class="card-title">Shop 6</h3>
+                  <p class="card-description"><strong>Keesaragutta Temple </strong></p>
+                  <button href="#" class="card-button">View More</button>
+                </div>
+              </div>
+              <!-- card 7 -->
+              <div class="card" id="showSliderBtn7">
+                <img src="../assets/img/States/TG/7.0.jpg" alt="Card Image 7">
+                <div class="card-content">
+                  <h3 class="card-title">Shop 7</h3>
+                  <p class="card-description"><strong>Kondagattu Anjaneya Swamy Temple</strong></p>
+                  <button href="#" class="card-button">View More</button>
+                </div>
+              </div>
+              <!-- card 8 -->
+              <div class="card" id="showSliderBtn8">
+                <img src="../assets/img/States/TG/8.0.jpg" alt="Card Image 8">
+                <div class="card-content">
+                  <h3 class="card-title">Shop 8</h3>
+                  <p class="card-description"><strong>Ramappa Kakatiya Ramalingeshwara(Rudreshwara)Temple</strong></p>
+                  <button href="#" class="card-button">View More</button>
+                </div>
+              </div>
+              <!-- card 9 -->
+              <div class="card" id="showSliderBtn9">
+                <img src="../assets/img/States/TG/9.0.jpg" alt="Card Image 9">
+                <div class="card-content">
+                  <h3 class="card-title">Shop 9</h3>
+                  <p class="card-description"><strong>Medaram Sammakka Saralamma Temple  </strong></p>
+                  <button href="#" class="card-button">View More</button>
+                </div>
+              </div>
+              <!-- card 10 -->
+              <div class="card" id="showSliderBtn10">
+                <img src="../assets/img/States/TG/10.0.jpg" alt="Card Image 10">
+                <div class="card-content">
+                  <h3 class="card-title">Shop 10</h3>
+                  <p class="card-description"><strong>Sanghi Temple</strong></p>
+                  <button href="#" class="card-button">View More</button>
+                </div>
+              </div>
+              <!-- card 11 -->
+              <div class="card" id="showSliderBtn11">
+                <img src="../assets/img/States/TG/11.0.jpg" alt="Card Image 11">
+                <div class="card-content">
+                  <h3 class="card-title">Shop 11</h3>
+                  <p class="card-description"><strong>Sri Ketaki Sangameshwara Swami Temple</strong></p>
+                  <a href="#" class="card-button">View More</a>
+                </div>
+              </div>
+              <!-- card 12 -->
+              <div class="card" id="showSliderBtn12">
+                <img src="../assets/img/States/TG/12.0.jpg" alt="Card Image 11">
+                <div class="card-content">
+                  <h3 class="card-title">Shop 12</h3>
+                  <p class="card-description"><strong>Thousand Pillar Temple</strong></p>
+                  <a href="#" class="card-button">View More</a>
+                </div>
+              </div>
+            <!-- card 13 -->
+            <div class="card" id="showSliderBtn13">
+              <img src="../assets/img/States/TG/13.0.jpg" alt="Card Image 11">
+              <div class="card-content">
+                <h3 class="card-title">Shop 13</h3>
+                <p class="card-description"><strong>Sri Lakshmi Narasimha Swamy Temple- Yadagirigutta </strong></p>
+                <a href="#" class="card-button">View More</a>
+              </div>
+            </div>
+            <!-- card 14 -->
+            <div class="card" id="showSliderBtn14">
+              <img src="../assets/img/States/TG/14.0.jpg" alt="Card Image 11">
+              <div class="card-content">
+                <h3 class="card-title">Shop 14</h3>
+                <p class="card-description"><strong>Sri Bhadrakali Devasthanam- Warangal</strong></p>
+                <a href="#" class="card-button">View More</a>
+              </div>
+            </div>
+             <!-- Card 15 -->
+            <div class="card" id="showSliderBtn15">
+              <img src="../assets/img/States/TG/15.0.jpg" alt="Card Image 15">
+              <div class="card-content">
+                <h3 class="card-title">Shop 15</h3>
+                <p class="card-description"><strong> Raja Rajeshwara Swami Temple- Vemulawada</strong></p>
+                <a href="#" class="card-button">View More</a>
+              </div>
+            </div>
+            <!-- Card 16 -->
+            <div class="card" id="showSliderBtn16">
+                <img src="../assets/img/States/TG/16.0.jpg" alt="Card Image 16">
+                <div class="card-content">
+                  <h3 class="card-title">Shop 16</h3>
+                  <p class="card-description"><strong>Balkampet Yellamma Temple</strong></p>
+                  <a href="#" class="card-button">View More</a>
+                </div>
+              </div>
+            
+            </div>
+           
+            <!-- Modal for Slider 1 -->
+           <div class="modal" id="modalSlider1">
+            <div class="modal-content">
+              <span class="close" id="closeModal1">&times;</span>
+                <div class="intro">
+                  <div class="left">
+                    <div>
+                    <span class="rainbow-text container1">Explore more about</span>
+                      
+                      <h1 style="color: #f70000;"><strong> Alampur Jogulamba Temple </strong> </h1>
+                      <div class="divDestDesc" style="overflow-y: scroll;">
+                        <p>Alampur Sri Jogulamba Devi another name is “Yogulamba/ Yogamba Hindu temple “ is one among the 18 Shakti peethas in worldwide.  </p>
+                        <p>“Upper jaw with tooth” Oordhva danta Pankti of Devi fell here. </p>
+                        <p> Alampur Jogulamba Mahadevi, Roudra Veekshana Loochana, Alampuri Sthita Mata, and Sarvartha Phala Siddhida are other names of Yogulamba (Sri Jogulamba Devi).</p>
+                      </div>
+                      <a href="https://srijogulamba.com/" target="_blank">Learn more</a>
+                    </div>
+                  </div>
+          
+                  <div class="slider">
+                    <ul>
+                      <li style="background-image:url(../assets/img/States/TG/1.1.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>	
+                        </div>
+                      </li>
+                      <li style="background-image:url(../assets/img/States/TG/1.2.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>	
+                        </div>
+                      </li>
+                      <li style="background-image:url(../assets/img/States/TG/1.3.jpeg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>	
+                        </div>
+                      </li>
+                    </ul>
+            
+                    <ul>
+                      <nav>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                      </nav>
+                    </ul>
+                    
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          
+            <!-- Modal for Slider 2 -->
+           <div class="modal" id="modalSlider2">
+            <div class="modal-content">
+              <span class="close" id="closeModal2">&times;</span>
+                <div class="intro">
+                  <div class="left">
+                    <div>
+                      <span class="rainbow-text container1">Explore more about</span>
+                      <h1 style="color: #f70000;"><strong>Basara Gnana Saraswathi Temple </strong> </h1>
+                      <div class="divDestDesc" style="overflow-y: scroll;">
+                        <p>Goddess Saraswati located on the banks of Godavari River at Basara, Telangana, India.</p>
+                        <p> It is one of the two famous Saraswati temples in the Indian subcontinent, the other being Sharada Peeth.</p>
+                        <p>OM Namo Sri Gnana Saraswathi Devi Namaha​​ Basar is a village with wonderful gardens surrounded by the temple premises of Telangana state.</p>
+                      </div>
+                      <a href="#">Learn more</a>
+                    </div>
+                  </div>
+          
+                  <div class="slider">
+                    <ul>
+                      <li style="background-image:url(../assets/img/States/TG/2.1.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>		
+                        </div>
+                      </li>
+                      <li style="background-image:url(../assets/img/States/TG/2.2.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>		
+                        </div>
+                      </li>
+                      <li style="background-image:url(../assets/img/States/TG/2.3.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>	
+                        </div>
+                      </li>
+                    </ul>
+            
+                    <ul>
+                      <nav>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                      </nav>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Modal for Slider 3 -->
+           <div class="modal" id="modalSlider3">
+            <div class="modal-content">
+              <span class="close" id="closeModal3">&times;</span>
+                <div class="intro">
+                  <div class="left">
+                    <div>
+                      <span class="rainbow-text container1">Explore more about</span>
+                      <h1 style="color: #f70000;"><strong>Bhadrachalam Sri Rama temple </strong> </h1>
+                      <div class="divDestDesc" style="overflow-y: scroll;">
+                        <p>The Sree Seetha Ramachandra Swamy shrine at Bhadrachalam, the most famous temple in the country dedicated to Lord Rama, is situated on the left bank of the Godavari river.</p>
+                        <p>The Temple was constructed in the 17th Century by the local Tahsildar, Kancharla Gopanna, popularly known as Bhakta Ramadas, a fervent devotee of Lod Sree Rama.</p>
+                      </div>
+                      <a href="https://bhadradritemple.telangana.gov.in/" target="_blank">Learn more</a>
+                    </div>
+                  </div>
+          
+                  <div class="slider">
+                    <ul>
+                      <li style="background-image:url(../assets/img/States/TG/3.1.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>		
+                        </div>
+                      </li>
+                      <li style="background-image:url(../assets/img/States/TG/3.2.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>		
+                        </div>
+                      </li>
+                      <li style="background-image:url(../assets/img/States/TG/3.3.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>	
+                        </div>
+                      </li>
+                    </ul>
+            
+                    <ul>
+                      <nav>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                      </nav>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+             
+            <!-- Modal for Slider 4 -->
+           <div class="modal" id="modalSlider4">
+            <div class="modal-content">
+              <span class="close" id="closeModal4">&times;</span>
+                <div class="intro">
+                  <div class="left">
+                    <div>
+                      <span class="rainbow-text container1">Explore more about</span>
+                      <h1 style="color: #f70000;"><strong>Chaya Someswara Swamy Temple</strong> </h1>
+                      <div class="divDestDesc" style="overflow-y: scroll;">
+                        <p>Chaya Someswara Swamy Temple is located in Panagal village, Nalgonda district of Telangana, India.</p>
+                        <p>This temple was built during 11th&12th centuries by the Ikshvaku family.</p>
+                        <p>One of the temple's Garbhagudis, in the west and facing east, of the Thrikutalayam always witnessesa shadow and this mystery attracts thousands of visitors to this Temple.</p>
+                      </div>
+                      <a href="https://telanganatourism.gov.in/partials/destinations/divine-destinations/nalgonda/chaya-someswara-swamy-temple.html" target="_blank">Learn more</a>
+                    </div>
+                  </div>
+          
+                  <div class="slider">
+                    <ul>
+                      <li style="background-image:url(../assets/img/States/TG/4.1.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>		
+                        </div>
+                      </li>
+                      <li style="background-image:url(../assets/img/States/TG/4.2.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>		
+                        </div>
+                      </li>
+                      <li style="background-image:url(../assets/img/States/TG/4.3.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>	
+                        </div>
+                      </li>
+                    </ul>
+            
+                    <ul>
+                      <nav>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                      </nav>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+ 
+            <!-- Modal for Slider 5 -->
+            <div class="modal" id="modalSlider5">
+              <div class="modal-content">
+                <span class="close" id="closeModal5">&times;</span>
+                  <div class="intro">
+                    <div class="left">
+                      <div>
+                        <span class="rainbow-text container1">Explore more about</span>
+                        <h1 style="color: #f70000;"><strong>Chilkur Balaji Temple</strong> </h1>
+                        <div class="divDestDesc" style="overflow-y: scroll;">
+                          <p>Sri Chilkur Balaji Temple, also known as the Visa Balaji Temple, is a revered Hindu temple located in the tranquil village of Chilkur, on the outskirts of Hyderabad, Telangana.</p>
+                          <p>This ancient temple is dedicated to Lord Balaji, a manifestation of Lord Venkateswara, and holds a unique place in the hearts of devotees. </p>
+                          <p></p>
+                        </div>
+                        <a href="https://www.chilkurbalaji.com/" target="_blank">Learn more</a>
+                      </div>
+                    </div>
+             
+                    <div class="slider">
+                      <ul>
+                        <li style="background-image:url(../assets/img/States/TG/5.1.jpg)">
+                          <div class="center-y">
+                            <h3></h3>
+                            <a href="#"></a>	
+                          </div>
+                        </li>
+                        <li style="background-image:url(../assets/img/States/TG/5.2.jpg)">
+                          <div class="center-y">
+                            <h3></h3>
+                            <a href="#"></a>	
+                          </div>
+                        </li>
+                        <li style="background-image:url(../assets/img/States/TG/5.3.jpg)">
+                          <div class="center-y">
+                            <h3></h3>
+                            <a href="#"></a>	
+                          </div>
+                        </li>
+                      </ul>
+              
+                      <ul>
+                        <nav>
+                          <a href="#"></a>
+                          <a href="#"></a>
+                          <a href="#"></a>
+                        </nav>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>          
+ 
+            <!-- Modal for Slider 6 -->
+            <div class="modal" id="modalSlider6">
+              <div class="modal-content">
+                <span class="close" id="closeModal6">&times;</span>
+                  <div class="intro">
+                    <div class="left">
+                      <div>
+                         <span class="rainbow-text container1">Explore more about</span>
+                        <h1 style="color: #f70000;"><strong>Keesaragutta Sri Ramalingeswara Swamy Temple </strong> </h1>
+                        <div class="divDestDesc" style="overflow-y: scroll;">
+                          <p>Sri Ramalingeswara Swamy Temple,(Kesaragiri Kshetram) at Keesaragutta, is very ancient and historical temple in Telangana State. </p>
+                          <p>The traditional literature says that LORD RAMACHANDRA visited this place after killing RAVANA and desire to install 101 shivalingams at this sacred place and accordingly directed.</p>
+                          <p>SRI BHAKTA HANUMAN to bring 101 Shivalingams from Varanasi. SRI HANUMAN could not return from Varanasi before the muhurtham, than LORD SHIVA said to have appeared before SRI RAMACHANDRA </p>
+                        </div>
+                        <a target="_blank" href="https://medchal-malkajgiri.telangana.gov.in/tourist-place/keesaragutta-temple/">Learn more</a>
+                      </div>
+                    </div>
+            
+                    <div class="slider">
+                      <ul>
+                        <li style="background-image:url(../assets/img/States/TG/6.1.jpg)">
+                          <div class="center-y">
+                             <h3></h3>
+                            <a href="#"></a>	
+                          </div>
+                        </li>
+                        <li style="background-image:url(../assets/img/States/TG/6.2.jpg)">
+                          <div class="center-y">
+                             <h3></h3>
+                            <a href="#"></a>	
+                          </div>
+                        </li>
+                        <li style="background-image:url(../assets/img/States/TG/6.3.jpg)">
+                          <div class="center-y">
+                             <h3></h3>
+                            <a href="#"></a>	
+                          </div>
+                        </li>
+                      </ul>
+              
+                      <ul>
+                        <nav>
+                          <a href="#"></a>
+                          <a href="#"></a>
+                          <a href="#"></a>
+                        </nav>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+ 
+            <!-- Modal for Slider 7 -->
+            <div class="modal" id="modalSlider7">
+              <div class="modal-content">
+                <span class="close" id="closeModal7">&times;</span>
+                  <div class="intro">
+                    <div class="left">
+                      <div>
+                        <span class="rainbow-text container1">Explore more about</span>
+                        <h1 style="color: #f70000;"><strong>Kondagattu Anjaneya Swamy Temple </strong> </h1>
+                        <div class="divDestDesc" style="overflow-y: scroll;">
+                          <p>Sri anjaneya Swamy varu is said to be Swayambhoo as seen from the silasasana wich is available on the external wall ao the main temple.</p>
+                          <p>Sri Anjneya Swamy faced to north side of temple along with Narasimha Vaktram Amburilla and shankhu Chakra.The poojas and rituals are being perfumed to the deity in Chatada Sri Visnava Agama Sampradayam.</p>
+                          <p>The presiding deity Sri Anjaneya is believed as ‘Sanjeeva’ for the diseased, mentally retarded and for childless for progeny. </p>
+                        </div>
+                        <a target="_blank" href="http://kondagattutemple.org/">Learn more</a>
+                      </div>
+                    </div>
+            
+                    <div class="slider">
+                      <ul>
+                        <li style="background-image:url(../assets/img/States/TG/7.1.jpg)">
+                          <div class="center-y">
+                            <h3></h3>
+                            <a href="#"></a>	
+                          </div>
+                        </li>
+                        <li style="background-image:url(../assets/img/States/TG/7.2.jpg)">
+                          <div class="center-y">
+                             <h3></h3>
+                            <a href="#"></a>	
+                          </div>
+                        </li>
+                        <li style="background-image:url(../assets/img/States/TG/7.3.jpg)">
+                          <div class="center-y">
+                             <h3></h3>
+                            <a href="#"></a>	
+                          </div>
+                        </li>
+                      </ul>
+              
+                      <ul>
+                        <nav>
+                          <a href="#"></a>
+                          <a href="#"></a>
+                          <a href="#"></a>
+                        </nav>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               
+            <!-- Modal for Slider 8 -->
+           <div class="modal" id="modalSlider8">
+            <div class="modal-content">
+              <span class="close" id="closeModal8">&times;</span>
+                <div class="intro">
+                  <div class="left">
+                    <div>
+                      <span class="rainbow-text container1">Explore more about</span>
+                      <h1 style="color: #f70000;"><strong>Ramappa Temple </strong> </h1>
+                      <div class="divDestDesc" style="overflow-y: scroll;">
+                        <p>Ramalingeswara temple which is popularly known as Ramappa Temple dates back to 1213 AD. It was built during the rule of Kakatiya King Ganapati Deva.</p>
+                        <p>This temple is considered to be one of best among the medieval temples of South India. </p>
+                        <p>Each pillar of the temple depicts sculptures and stories from mythology. It is also said that if you hit a pillar or a stone of this temple, you can hear musical sounds.</p>
+                      </div>
+                      <a href="https://whc.unesco.org/en/list/1570/">Learn more</a>
+                    </div>
+                  </div>
+          
+                  <div class="slider">
+                    <ul>
+                      <li style="background-image:url(../assets/img/States/TG/8.1.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>		
+                        </div>
+                      </li>
+                      <li style="background-image:url(../assets/img/States/TG/8.2.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>		
+                        </div>
+                      </li>
+                      <li style="background-image:url(../assets/img/States/TG/8.3.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>	
+                        </div>
+                      </li>
+                    </ul>
+            
+                    <ul>
+                      <nav>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                      </nav>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+             
+            <!-- Modal for Slider 9 -->
+           <div class="modal" id="modalSlider9">
+            <div class="modal-content">
+              <span class="close" id="closeModal9">&times;</span>
+                <div class="intro">
+                  <div class="left">
+                    <div>
+                      <span class="rainbow-text container1">Explore more about</span>
+                      <h1 style="color: #f70000;"><strong>Medaram Sammakka Saralamma Temple</strong> </h1>
+                      <div class="divDestDesc" style="overflow-y: scroll;">
+                        <p>Sammakka Saralamma Jathara or Medaram Jathara is a tribal festival of honouring the goddesses celebrated in the state of Telangana, India.</p>
+                        <p>Sammakka Saralamma Jathara is the time for the largest tribal religious congregation in the world, held every two years (biennually), with approximately ten million people converging on the place, over a period of four days, which is 90km from Warangal city.</p> 
+                      </div>
+                      <a href="https://medaramjathara.com/" target="_blank">Learn more</a>
+                    </div>
+                  </div>
+          
+                  <div class="slider">
+                    <ul>
+                      <li style="background-image:url(../assets/img/States/TG/9.1.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>		
+                        </div>
+                      </li>
+                      <li style="background-image:url(../assets/img/States/TG/9.2.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>		
+                        </div>
+                      </li>
+                      <li style="background-image:url(../assets/img/States/TG/9.3.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>	
+                        </div>
+                      </li>
+                    </ul>
+            
+                    <ul>
+                      <nav>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                      </nav>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+ 
+            <!-- Modal for Slider 10 -->
+            <div class="modal" id="modalSlider10">
+              <div class="modal-content">
+                <span class="close" id="closeModal10">&times;</span>
+                  <div class="intro">
+                    <div class="left">
+                      <div>
+                        <span class="rainbow-text container1">Explore more about</span>
+                        <h1 style="color: #f70000;"><strong>Sanghi Temple </strong> </h1>
+                      <div class="divDestDesc" style="overflow-y: scroll;">
+                        <p> With the blessings of Late Jadguru Sri Jayendra Saraswathi Shankaracharya of Kanchipuram the temple was built in 1991 and was completed in a span of 18 months. </p>
+                        <p> The Sanghi family, renowned for their benevolence and philanthropy, embraced the vision, transforming it into reality. </p>
+                      </div>  
+                        <a href="https://www.sanghitemple.org/">Learn more</a>
+                      </div>
+                    </div>
+            
+                    <div class="slider">
+                      <ul>
+                        <li style="background-image:url(../assets/img/States/TG/10.1.jpg)">
+                          <div class="center-y">
+                             <h3></h3>
+                            <a href="#"></a>	
+                          </div>
+                        </li>
+                        <li style="background-image:url(../assets/img/States/TG/10.2.jpg)">
+                          <div class="center-y">
+                             <h3></h3>
+                            <a href="#"></a>	
+                          </div>
+                        </li>
+                        <li style="background-image:url(../assets/img/States/TG/10.3.jpg)">
+                          <div class="center-y">
+                             <h3></h3>
+                            <a href="#"></a>	
+                          </div>
+                        </li>
+                      </ul>
+              
+                      <ul>
+                        <nav>
+                          <a href="#"></a>
+                          <a href="#"></a>
+                          <a href="#"></a>
+                        </nav>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               
+            <!-- Modal for Slider 11 -->
+           <div class="modal" id="modalSlider11">
+            <div class="modal-content">
+              <span class="close" id="closeModal11">&times;</span>
+                <div class="intro">
+                  <div class="left">
+                    <div>
+                      <span class="rainbow-text container1">Explore more about</span>
+                      <h1 style="color: #f70000;"><strong>Sri Ketaki Sangameshwara Swamy Temple </strong> </h1>
+                      <div class="divDestDesc" style="overflow-y: scroll;">  
+                        <p> The Lingam is believed to have been installed by Lord Brahma and water reported to be flowing out of its panapattam even during dry summer. </p>
+                        <p>The temple is considered a place of religious sanctity due to being built at the confluence of seven rivers and remain visible for two months.</p>
+                        <p>As the present linga was instilled by Bramha now the pooja's are being performed by Kethaki flowers (Kethaki flowers are generally not used for pooja's)(మొగలి పువ్వు)</p>
+                      </div>  
+                      <a href="https://www.tripuntold.com/telangana/medak/sri-ketaki-sangameswara-swamy-temple/" target="_blank">Learn more</a>
+                    </div>
+                  </div>
+          
+                  <div class="slider">
+                    <ul>
+                      <li style="background-image:url(../assets/img/States/TG/11.1.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>		
+                        </div>
+                      </li>
+                      <li style="background-image:url(../assets/img/States/TG/11.2.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>		
+                        </div>
+                      </li>
+                      <li style="background-image:url(../assets/img/States/TG/11.3.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>	
+                        </div>
+                      </li>
+                    </ul>
+            
+                    <ul>
+                      <nav>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                      </nav>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+ 
+            <!-- Modal for Slider 12 -->
+            <div class="modal" id="modalSlider12">
+              <div class="modal-content">
+                <span class="close" id="closeModal12">&times;</span>
+                  <div class="intro">
+                    <div class="left">
+                      <div>
+                        <span class="rainbow-text container1">Explore more about</span>
+                        <h1 style="color: #f70000;"><strong>Thousand Pillar Temple</strong> </h1>
+                        <div class="divDestDesc" style="overflow-y: scroll;">
+                          <p>Thousand Pillar temple was Built in 12th century, by the Rudra Deva, this temple is dedicated to Lord Shiva. Named as Sri Rudreshwara Swamy Temple.</p>
+                          <p>One of the interesting aspect of 1000 Pillar Temple is that here the third deity is not Lord Brahma who is considered to be one of the Trinity (Lord Shiva, Vishnu and Brahma). Here the Lord Surya is being worshipped as the third deity.</p>
+                          <p>As you enter the temple, on the both side of the entrance beautifully carved sculpture of elephants greets you. </p>
+                        </div>  
+                        <a href="https://warangaltourism.in/thousand-1000-pillar-temple-warangal-hanamkonda" target="_blank">Learn more</a>
+                      </div>
+                    </div>
+            
+                    <div class="slider">
+                      <ul>
+                        <li style="background-image:url(../assets/img/States/TG/12.1.jpg)">
+                          <div class="center-y">
+                             <h3></h3>
+                            <a href="#"></a>	
+                          </div>
+                        </li>
+                        <li style="background-image:url(../assets/img/States/TG/12.2.jpg)">
+                          <div class="center-y">
+                             <h3></h3>
+                            <a href="#"></a>	
+                          </div>
+                        </li>
+                        <li style="background-image:url(../assets/img/States/TG/12.3.jpg)">
+                          <div class="center-y">
+                             <h3></h3>
+                            <a href="#"></a>	
+                          </div>
+                        </li>
+                      </ul>
+              
+                      <ul>
+                        <nav>
+                          <a href="#"></a>
+                          <a href="#"></a>
+                          <a href="#"></a>
+                        </nav>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               
+            <!-- Modal for Slider 13 -->
+           <div class="modal" id="modalSlider13">
+            <div class="modal-content">
+              <span class="close" id="closeModal13">&times;</span>
+                <div class="intro">
+                  <div class="left">
+                    <div>
+                      <span class="rainbow-text container1">Explore more about</span>
+                      <h1 style="color: #f70000;"><strong>Sri Lakshmi Narasimha Swamy Temple- Yadagirigutta</strong> </h1>
+                      <div class="divDestDesc" style="overflow-y: scroll;">
+                        <p>In Tretayugam, there lived a sage by the name of Yadarishi, son of the great sage Rishyasrunga and Santa Devi who did penance inside a cave with the blessings of Anjaneya (Hanuman) on this hill between Bhongir (Bhuvanagiri) and Raigiri (Now in Nalgonda district of Telangana, India).</p>
+                        <p>Lord Vishnu appeared before him in five different forms as Sri JwalaNarasimha ,Sri Yogananda, SriGandabherunda, Sri Ugra and Sri Lakshminarasimha.</p>
+                      </div>
+                      <a href="https://yadagiriguttatemple.telangana.gov.in/" target="_blank">Learn more</a>
+                    </div>
+                  </div>
+          
+                  <div class="slider">
+                    <ul>
+                      <li style="background-image:url(../assets/img/States/TG/13.1.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>		
+                        </div>
+                      </li>
+                      <li style="background-image:url(../assets/img/States/TG/13.2.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>		
+                        </div>
+                      </li>
+                      <li style="background-image:url(../assets/img/States/TG/13.3.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>	
+                        </div>
+                      </li>
+                    </ul>
+            
+                    <ul>
+                      <nav>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                      </nav>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+               
+            <!-- Modal for Slider 14 -->
+           <div class="modal" id="modalSlider14">
+            <div class="modal-content">
+              <span class="close" id="closeModal14">&times;</span>
+                <div class="intro">
+                  <div class="left">
+                    <div>
+                      <span class="rainbow-text container1">Explore more about</span>
+                      <h1 style="color: #f70000;"><strong>Sri Bhadrakali Devasthanam- Warangal</strong> </h1>
+                      <div class="divDestDesc" style="overflow-y: scroll;">
+                        <p> The temple is believed to be built in 625 A.D by the King Pulakeshin II of Chalukya dynasty to commemorate his victory over Vengi region of Andhra Desham.</p>
+                        <p>As per the writings on the temple wall. Kakatiya kings later have adopted the temple and considered Goddess Bhadrakali as their “Kula Devatha”.</p>
+                        <p>The temple is known for its Chalukyan style architecture and intricate carvings. </p>
+                      </div>  
+                      <a href="#">Learn more</a>
+                    </div>
+                  </div>
+          
+                  <div class="slider">
+                    <ul>
+                      <li style="background-image:url(../assets/img/States/TG/14.1.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>		
+                        </div>
+                      </li>
+                      <li style="background-image:url(../assets/img/States/TG/14.2.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>		
+                        </div>
+                      </li>
+                      <li style="background-image:url(../assets/img/States/TG/14.3.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>	
+                        </div>
+                      </li>
+                    </ul>
+            
+                    <ul>
+                      <nav>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                      </nav>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+   
+            <!-- Modal for Slider 15 -->
+            <div class="modal" id="modalSlider15">
+              <div class="modal-content">
+                <span class="close" id="closeModal15">&times;</span>
+                  <div class="intro">
+                    <div class="left">
+                      <div>
+                        <span class="rainbow-text container1">Explore more about</span>
+                        <h1 style="color: #f70000;"><strong>Raja Rajeshwara Swami Temple </strong> </h1>
+                        <div class="divDestDesc" style="overflow-y: scroll;">
+                          <p> Lord Raja Rajeshwara in the form of “Neela Lohitha Siva Lingam is known for his boundless benevolence in fulfilling the wishes of the devotees.</p>
+                          <p>This Shrine is popularly known as ‘Dakshina Kasi’ & also as “Harihara Kshetram” for their being two Vaisnava Temples in main Temple complex i.e., </p>
+                          <p>Sri Anantha Padmanabha Swamy is Kesthra Palaka of this Temple. </p>
+                        </div>
+                        <a href="https://vemulawadatemple.telangana.gov.in/" target="_blank">Learn more</a>
+                      </div>
+                    </div>
+            
+                    <div class="slider">
+                      <ul>
+                        <li style="background-image:url(../assets/img/States/TG/15.1.jpg)">
+                          <div class="center-y">
+                             <h3></h3>
+                            <a href="#"></a>	
+                          </div>
+                        </li>
+                        <li style="background-image:url(../assets/img/States/TG/15.2.jpg)">
+                          <div class="center-y">
+                             <h3></h3>
+                            <a href="#"></a>	
+                          </div>
+                        </li>
+                        <li style="background-image:url(../assets/img/States/TG/15.3.jpg)">
+                          <div class="center-y">
+                             <h3></h3>
+                            <a href="#"></a>	
+                          </div>
+                        </li>
+                      </ul>
+              
+                      <ul>
+                        <nav>
+                          <a href="#"></a>
+                          <a href="#"></a>
+                          <a href="#"></a>
+                        </nav>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+   
+            <!-- Modal for Slider 16 -->
+            <div class="modal" id="modalSlider16">
+              <div class="modal-content">
+                <span class="close" id="closeModal16">&times;</span>
+                  <div class="intro">
+                    <div class="left">
+                      <div>
+                        <span class="rainbow-text container1">Explore more about</span>
+                        <h1 style="color: #f70000;"><strong>Balkampet Yellamma Temple</strong> </h1>
+                        <div class="divDestDesc" style="overflow-y: scroll;">
+                          <p>It is also much famous for the Bonalu Jathara celebrations that take place here. Bonalu is Hyderabad's most popular festival besides Ramzan.</p>
+                          <p>Bonalu Jathara Festival at Balkampet Yellamma Temple starts after Golconda Bonalu Jathara and Ujjaini Mahankali Bonalu Jathara. </p>
+                          <p>The idol of the goddess, interestingly, lies 10 feet deeper than the ground level. </p>
+                        </div>
+                        <a href="https://balkampettemple.telangana.gov.in/" target="_blank">Learn more</a>
+                      </div>
+                    </div>
+            
+                    <div class="slider">
+                      <ul>
+                        <li style="background-image:url(../assets/img/States/TG/16.1.jpg)">
+                          <div class="center-y">
+                             <h3></h3>
+                            <a href="#"></a>	
+                          </div>
+                        </li>
+                        <li style="background-image:url(../assets/img/States/TG/16.2.jpg)">
+                          <div class="center-y">
+                             <h3></h3>
+                            <a href="#"></a>	
+                          </div>
+                        </li>
+                        <li style="background-image:url(../assets/img/States/TG/16.3.jpg)">
+                          <div class="center-y">
+                             <h3></h3>
+                            <a href="#"></a>	
+                          </div>
+                        </li>
+                      </ul>
+              
+                      <ul>
+                        <nav>
+                          <a href="#"></a>
+                          <a href="#"></a>
+                          <a href="#"></a>
+                        </nav>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+            <!-- Continue adding modals for each shop (modalSlider3 to modalSlider8) -->
+          
+
+
+            <br/><br/>
+            <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+<script src="{% static 'js/states.js' %}"></script>
+
+</body>
+</html>

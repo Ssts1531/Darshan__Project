@@ -1,0 +1,765 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Kerala</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+ <link href="../assets/img/logo.png" rel="icon">
+  <link href="../assets/img/logo.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+  <!-- Main CSS File -->
+  <!--<link href="assets/css/main.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="{% static 'css/states.css' %}">
+
+  <!-- =======================================================
+  * Template Name: Restaurantly
+  * Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+</head>
+
+    <body class="index-page"> 
+<!--        <header id="header" class="header fixed-top">
+      
+          <div class="topbar d-flex align-items-center">
+            <div class="container d-flex justify-content-center justify-content-md-between">
+              <div class="contact-info d-flex align-items-center">
+                <i class="bi bi-envelope d-flex align-items-center"><a href="#" style="color:White">contact@darshan.com</a></i>
+                <i class="bi bi-phone d-flex align-items-center ms-4"><span style="color:White" >+91 9876543210</span></i>
+              </div>
+              <div class="languages d-none d-md-flex align-items-center">
+                <ul>
+                  <li>En</li>
+                  <li><a href="#">Te</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      
+          <div class="branding d-flex align-items-cente">
+      
+            <div class="container position-relative d-flex align-items-center justify-content-between">
+              <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+                 <img src="https://ih1.redbubble.net/image.1909441780.5259/st,small,507x507-pad,600x600,f8f8f8.u2.jpg">
+                <img src="assets/img/logo1.png" alt="">
+              </a>
+      
+             
+              <nav id="navmenu" class="navmenu">
+                <ul>
+                  <li><a href="#" class=""><strong>HOME</strong><br></a></li>
+                  <li><a href="aboutus.html"><strong>ABOUT US</strong></a></li>
+                  <li><a href="#"><strong>DONATIONS</strong></a></li>
+                  <li><a href="#"><strong>OUR POJA</strong></a></li>
+                  <li><a href="#"><strong>VEDAS</strong></a></li>
+                  <li class="dropdown"><a href="#"><strong>SLOKAS</strong> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                      
+                      <li class="dropdown"><a href="#"><span>Slokas</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                          <li><a href="https://shlokam.org/index/">Shlokam</a></li>
+                          <li><a href="https://shlokam.org/tag/stotram/">Stotram</a></li>
+                          <li><a href="https://shlokam.org/tag/mantra/">Mantram</a></li>
+                          <li><a href="https://shlokam.org/tag/suktam/">Suktam</a></li>
+                          <li><a href="https://shlokam.org/category/Upanishad/">Upanishads</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="https://shlokam.org/bhagavad-gita/">Bhagavad Gita</a></li>
+                      <li><a href="https://www.valmikiramayan.net/">Ramayanam</a></li>
+                      <li><a href="https://www.srimadbhagavatamclass.com/">Bhagavatam</a></li>
+                      <li class="dropdown"><a href="#"><span>Anushtanam</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                          <li><a href="https://stotranidhi.com/puja-vidhanamu/">Pujalu</a></li>
+                          <li><a href="https://stotranidhi.com/vratalu-in-telugu/">Vratalu</a></li>
+                          <li><a href="https://stotranidhi.com/anubandham/sandhya-vandanam-in-telugu/">Sandhya Vandanam</a></li>
+                        </ul>
+                      </li>  
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a href="#"><strong>Books</strong> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                      <li><a href="https://stotranidhi.com/books/">Printed Books</a></li>
+                      <li><a href="https://stotranidhi.com/ebooks/">E-bOOKS</a></li>
+                      <li><a href="https://stotranidhi.com/errata/">Errata</a></li>
+                    </ul>
+                  </li>  
+                    <li><a href="#contact"><strong>Contact</strong></a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+              </nav>
+
+            </div>
+      
+          </div>
+      
+        </header> -->
+            <!---->
+      <div style="background-color: #f70000;"><br/>
+        <h1 style="text-align: center; color: #f3ea3c"><strong>*** KERALA ***</strong></h1><br/>
+      </div>
+      <div>
+            <a style="color: #f70000;" href="/Home">Home  >>></a> KERALA
+      </div><br/>
+
+            <div class="container">
+               <!-- Card_1 -->
+              <div class="card" id="showSliderBtn1">
+                <img src="../assets/img/States/KE/1.0.jpg" alt="Anantha Padmanabha Swamy Temple">
+                <div class="card-content">
+                  <h3 class="card-title">Shop 1</h3>
+                  <p class="card-description"><strong>Anantha Padmanabha Swamy Temple (Thiruvananthapuram)</strong></p>
+                  <a href="#" class="card-button">View More</a>
+                </div>
+              </div>
+              <!-- Card_2 -->
+              <div class="card" id="showSliderBtn2">
+                <img src="../assets/img/States/KE/2.0.jpg" alt="Sree Ayyappa Temple">
+                <div class="card-content">
+                  <h3 class="card-title">Shop 2</h3>
+                  <p class="card-description"><strong>Sabarimala Sree Ayyappa Temple (Pathanamthitta)</strong></p>
+                  <button href="#" class="card-button">View More</button>
+                </div>
+              </div>
+                <!-- Card_3 -->          
+              <div class="card" id="showSliderBtn3">
+                <img src="../assets/img/States/KE/3.0.jpg" alt="Guruvayur Sri Krishna Temple">
+                <div class="card-content">
+                  <h3 class="card-title">Shop 3</h3>
+                  <p class="card-description"><strong>Guruvayur Sri Krishna Temple (Thrissur)</strong></p>
+                  <button href="#" class="card-button">View More</button>
+                </div>
+              </div>
+          
+              <!-- card 4 -->
+              <div class="card" id="showSliderBtn4">
+                <img src="../assets/img/States/KE/4.0.jpg" alt="Vadakkunnathan Temple">
+                <div class="card-content">
+                  <h3 class="card-title">Shop 4</h3>
+                  <p class="card-description"><strong>Vadakkunnathan Temple (Thrissur)</strong></p>
+                  <button href="#" class="card-button">View More</button>
+                </div>
+              </div>
+              <!-- card 5 -->
+              <div class="card" id="showSliderBtn5">
+                <img src="../assets/img/States/KE/5.0.jpg" alt="Chottanikkara Temple">
+                <div class="card-content">
+                  <h3 class="card-title">Shop 5</h3>
+                  <p class="card-description"><strong>Chottanikkara Temple (Ernakulam)</strong></p>
+                  <button href="#" class="card-button">View More</button>
+                </div>
+              </div>
+              <!-- card 6 -->
+              <div class="card" id="showSliderBtn6">
+                <img src="../assets/img/States/KE/6.0.jpg" alt="Vaikom Mahadeva Temple">
+                <div class="card-content">
+                  <h3 class="card-title">Shop 6</h3>
+                  <p class="card-description"><strong>Vaikom Mahadeva Temple (Kottayam)</strong></p>
+                  <button href="#" class="card-button">View More</button>
+                </div>
+              </div>
+              <!-- card 7 -->
+              <div class="card" id="showSliderBtn7">
+                <img src="../assets/img/States/KE/7.0.jpg" alt="Mannarasala Nagaraja Temple">
+                <div class="card-content">
+                  <h3 class="card-title">Shop 7</h3>
+                  <p class="card-description"><strong>Mannarasala Nagaraja Temple (Alappuzha)</strong></p>
+                  <button href="#" class="card-button">View More</button>
+                </div>
+              </div>
+              <!-- card 8 -->
+              <div class="card" id="showSliderBtn8">
+                <img src="../assets/img/States/KE/8.0.jpg" alt="Kodungallur Bhagavathy Temple">
+                <div class="card-content">
+                  <h3 class="card-title">Shop 8</h3>
+                  <p class="card-description"><strong>Kodungallur Bhagavathy Temple (Thrissur)</strong></p>
+                  <button href="#" class="card-button">View More</button>
+                </div>
+              </div>
+              <!-- card 9 -->
+              <div class="card" id="showSliderBtn9">
+                <img src="../assets/img/States/KE/9.0.jpg" alt="Thirunelli Temple">
+                <div class="card-content">
+                  <h3 class="card-title">Shop 9</h3>
+                  <p class="card-description"><strong>Thirunelli Temple (Wayanad)</strong></p>
+                  <button href="#" class="card-button">View More</button>
+                </div>
+              </div>
+              <!-- card 10 -->
+              <div class="card" id="showSliderBtn10">
+                <img src="../assets/img/States/KE/10.0.jpg" alt="Aazhimala Shiva Temple">
+                <div class="card-content">
+                  <h3 class="card-title">Shop 10</h3>
+                  <p class="card-description"><strong>Aazhimala Shiva Temple (Thiruvananthapuram)</strong></p>
+                  <button href="#" class="card-button">View More</button>
+                </div>
+              </div>
+              
+            
+            </div>
+           
+            <!-- Modal for Slider 1 -->
+           <div class="modal" id="modalSlider1">
+            <div class="modal-content">
+              <span class="close" id="closeModal1">&times;</span>
+                <div class="intro">
+                  <div class="left">
+                    <div>
+                    <span class="rainbow-text container1">Explore more about</span>
+                      
+                      <h1 style="color: #f70000;"><strong>Anantha Padmanabha Swamy Temple</strong> </h1>
+                      <div class="divDestDesc" style="overflow-y: scroll;"> 
+                        <p>The main idol is massive and intricately crafted using <strong>Katu-Sarkara-Yogam</strong>, who is depicted reclining on the serpent Adishesha in the <strong>"Anantha Shayana"</strong> posture.</p>
+                        <p>Requiring devotees to view the Lord through three separate doorways to see his head, midriff, & feet.</p>
+                        <p>The iconic 7-tier, 100-foot Gopuram reflects a brilliant fusion of Kerala and Tamil architectural styles.</p>
+                      </div>
+                      <a href="https://spst.in/" target="_blank">Learn more</a>
+                    </div>
+                  </div>
+          
+                  <div class="slider">
+                    <ul>
+                      <li style="background-image:url(../assets/img/States/KE/1.1.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>	
+                        </div>
+                      </li>
+                      <li style="background-image:url(../assets/img/States/KE/1.2.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>	
+                        </div>
+                      </li>
+                      <li style="background-image:url(../assets/img/States/KE/1.3.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>	
+                        </div>
+                      </li>
+                    </ul>
+            
+                    <ul>
+                      <nav>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                      </nav>
+                    </ul>
+                    
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          
+            <!-- Modal for Slider 2 -->
+           <div class="modal" id="modalSlider2">
+            <div class="modal-content">
+              <span class="close" id="closeModal2">&times;</span>
+                <div class="intro">
+                  <div class="left">
+                    <div>
+                      <span class="rainbow-text container1">Explore more about</span>
+                      <h1 style="color: #f70000;"><strong>Sree Ayyappa Temple</strong> </h1>
+                      <div class="divDestDesc" style="overflow-y: scroll;">
+                        <p>Sabarimala Sree Dharma Sastha Temple, dedicated to Lord Ayyappa, is the most famous and prominent among all the Sastha temples in Kerala.</p>
+                        <p>Devotees carry a sacred, twin-compartment cloth bag called Irumudi Kettu on their heads. It contains offerings, most notably ghee-filled coconuts.</p>
+                        <p>The final ascent to the sanctum requires climbing 18 sacred steps. Traditionally, only pilgrims who have completed the Irumudi Kettu are permitted to climb these steps.</p>
+                        <p>The bright celestial star (Sirius) that appears in the evening sky above the Ponnambalamedu hill during mid January.</p>
+                      </div>
+                      <a href="https://sabarimala.kerala.gov.in/">Learn more</a>
+                    </div>
+                  </div>
+          
+                  <div class="slider">
+                    <ul>
+                      <li style="background-image:url(../assets/img/States/KE/2.1.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>		
+                        </div>
+                      </li>
+                      <li style="background-image:url(../assets/img/States/KE/2.2.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>		
+                        </div>
+                      </li>
+                      <li style="background-image:url(../assets/img/States/KE/2.3.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>	
+                        </div>
+                      </li>
+                    </ul>
+            
+                    <ul>
+                      <nav>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                      </nav>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Modal for Slider 3 -->
+           <div class="modal" id="modalSlider3">
+            <div class="modal-content">
+              <span class="close" id="closeModal3">&times;</span>
+                <div class="intro">
+                  <div class="left">
+                    <div>
+                      <span class="rainbow-text container1">Explore more about</span>
+                      <h1 style="color: #f70000;"><strong>Guruvayur Sri Krishna Temple</strong> </h1>
+                      <div class="divDestDesc" style="overflow-y: scroll;">
+                        <p> The festivals are as follows: Guruvayur Utsavam, Ekadashi Festival, Chembai Music Festival, Mandala Pooja, Saraswathy Pooja, Thiruvonam, Ashtami Rohini, Nira Puthari, Vaishakha, Vishu, Kucheladinam, Samkrama.</p>
+                        <p>The current structure of the temple is believed to have been rebuilt in the 16th century by the Zamorin rulers of Calicut. </p>
+                        <p>The temple believed to be at least 5000 years old was initially known as "Bhooloka Vaikuntha"</p>
+                      </div>
+                      <a href="https://bhadradritemple.telangana.gov.in/" target="_blank">Learn more</a>
+                    </div>
+                  </div>
+          
+                  <div class="slider">
+                    <ul>
+                      <li style="background-image:url(../assets/img/States/KE/3.1.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>		
+                        </div>
+                      </li>
+                      <li style="background-image:url(../assets/img/States/KE/3.2.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>		
+                        </div>
+                      </li>
+                      <li style="background-image:url(../assets/img/States/KE/3.3.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>	
+                        </div>
+                      </li>
+                    </ul>
+            
+                    <ul>
+                      <nav>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                      </nav>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+             
+            <!-- Modal for Slider 4 -->
+           <div class="modal" id="modalSlider4">
+            <div class="modal-content">
+              <span class="close" id="closeModal4">&times;</span>
+                <div class="intro">
+                  <div class="left">
+                    <div>
+                      <span class="rainbow-text container1">Explore more about</span>
+                      <h1 style="color: #f70000;"><strong>Wadakkunathan Temple</strong> </h1>
+                      <div class="divDestDesc" style="overflow-y: scroll;">                  
+                        <p>According to legends the original “Prathishta” was done by Lord Parasurama, an incarnation of Vishnu and it must have been done at least four thousand years ago.</p>
+                        <p>The main deity of the temple is Lord Siva, other idols installed in the temple are those to Sree Parvati, Ganesha, Sankaranarayana and Sree Rama. Parvati, is sanctify in the sanctum of Lord Shiva it self in opposite direction.</p>
+                        <p>Sree Wadakkunathan Temple won <strong>2015 UNESCO ASIA PACIFIC Heritage Award of Excellence.</strong></p>
+                      </div>
+                      <a href="https://sreewadakkunathantemple.org/" target="_blank">Learn more</a>
+                    </div>
+                  </div>
+          
+                  <div class="slider">
+                    <ul>
+                      <li style="background-image:url(../assets/img/States/KE/4.1.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>		
+                        </div>
+                      </li>
+                      <li style="background-image:url(../assets/img/States/KE/4.2.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>		
+                        </div>
+                      </li>
+                      <li style="background-image:url(../assets/img/States/KE/4.3.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>	
+                        </div>
+                      </li>
+                    </ul>
+            
+                    <ul>
+                      <nav>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                      </nav>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+ 
+            <!-- Modal for Slider 5 -->
+            <div class="modal" id="modalSlider5">
+              <div class="modal-content">
+                <span class="close" id="closeModal5">&times;</span>
+                  <div class="intro">
+                    <div class="left">
+                      <div>
+                        <span class="rainbow-text container1">Explore more about</span>
+                        <h1 style="color: #f70000;"><strong>Chottanikkara Temple</strong> </h1>
+                        <div class="divDestDesc" style="overflow-y: scroll;">                  
+                          <p>The Divine Mother known as Rajarajeswari (Adiparasakthi) is worshipped here in three forms Saraswathy in the morning, Lakshmi at noon and Durga in the evening. </p>
+                          <p>here is an Idol of Mahavishnu on the same pedestal and so the Deity is called Ammenarayana, Devinarayana, Lakshminarayana and Bhadrenarayana also. Along with Lakshmi & Narayana there are idols of Brahma, Siva, Ganapathi (Ganesh), Subramanya and Sastha on the same pedestal.</p>
+                          <p><strong>"MAKOM Thozhal" </strong>is the most important festival of the temple which is celebrated in the month of Kumbham. (Feb / March)</p>
+                        </div>
+                        <a href="https://chottanikkarabhagavathy.org/" target="_blank">Learn more</a>
+                      </div>
+                    </div>
+             
+                    <div class="slider">
+                      <ul>
+                        <li style="background-image:url(../assets/img/States/KE/5.1.jpg)">
+                          <div class="center-y">
+                            <h3></h3>
+                            <a href="#"></a>	
+                          </div>
+                        </li>
+                        <li style="background-image:url(../assets/img/States/KE/5.2.jpg)">
+                          <div class="center-y">
+                            <h3></h3>
+                            <a href="#"></a>	
+                          </div>
+                        </li>
+                        <li style="background-image:url(../assets/img/States/KE/5.3.jpg)">
+                          <div class="center-y">
+                            <h3></h3>
+                            <a href="#"></a>	
+                          </div>
+                        </li>
+                      </ul>
+              
+                      <ul>
+                        <nav>
+                          <a href="#"></a>
+                          <a href="#"></a>
+                          <a href="#"></a>
+                        </nav>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>          
+ 
+            <!-- Modal for Slider 6 -->
+            <div class="modal" id="modalSlider6">
+              <div class="modal-content">
+                <span class="close" id="closeModal6">&times;</span>
+                  <div class="intro">
+                    <div class="left">
+                      <div>
+                         <span class="rainbow-text container1">Explore more about</span>
+                        <h1 style="color: #f70000;"><strong>Vaikom Mahadeva Temple</strong> </h1>
+                        <div class="divDestDesc" style="overflow-y: scroll;">                  
+                          <p>Vaikkom’s Shiva is fondly called Vaikkathappan. The Shiva Linga here is believed to be from the ‘Treta yuga’ and considered as one of the oldest temples in Kerala</p>
+                          <p>Lord Shiva, fondly known as Vaikkathappan. It is one of the few temples revered by both Shaivaites and Vaishnavaites.</p>
+                          <p>Devotees believe that by offering worship at temples before the 'Ucha pooja,' all their wishes can be fulfilled.</p>
+                        </div>
+                        <a target="_blank" href="https://www.vaikomtemple.org/">Learn more</a>
+                      </div>
+                    </div>
+            
+                    <div class="slider">
+                      <ul>
+                        <li style="background-image:url(../assets/img/States/KE/6.1.jpg)">
+                          <div class="center-y">
+                             <h3></h3>
+                            <a href="#"></a>	
+                          </div>
+                        </li>
+                        <li style="background-image:url(../assets/img/States/KE/6.2.jpg)">
+                          <div class="center-y">
+                             <h3></h3>
+                            <a href="#"></a>	
+                          </div>
+                        </li>
+                        <li style="background-image:url(../assets/img/States/KE/6.3.jpg)">
+                          <div class="center-y">
+                             <h3></h3>
+                            <a href="#"></a>	
+                          </div>
+                        </li>
+                      </ul>
+              
+                      <ul>
+                        <nav>
+                          <a href="#"></a>
+                          <a href="#"></a>
+                          <a href="#"></a>
+                        </nav>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+ 
+            <!-- Modal for Slider 7 -->
+            <div class="modal" id="modalSlider7">
+              <div class="modal-content">
+                <span class="close" id="closeModal7">&times;</span>
+                  <div class="intro">
+                    <div class="left">
+                      <div>
+                        <span class="rainbow-text container1">Explore more about</span>
+                        <h1 style="color: #f70000;"><strong>Mannarasala Nagaraja Temple</strong> </h1>
+                        <div class="divDestDesc" style="overflow-y: scroll;">                  
+                          <p>The Mannarasala Sree Nagaraja Temple is the largest serpent worship temple in the state, housing over 30,000 snake images.</p>
+                          <p>The most significant celebration occurs on the Ayilyam day of the Malayalam month of Thulam (October/November).</p>
+                          <p> The most popular offering is the Uruli Kamazhthal—placing a brass or bronze vessel upside down before the deity to seek blessings for fertility.</p>
+                        </div>
+                        <a target="_blank" href="https://mannarasala.org/">Learn more</a>
+                      </div>
+                    </div>
+            
+                    <div class="slider">
+                      <ul>
+                        <li style="background-image:url(../assets/img/States/KE/7.1.jpg)">
+                          <div class="center-y">
+                            <h3></h3>
+                            <a href="#"></a>	
+                          </div>
+                        </li>
+                        <li style="background-image:url(../assets/img/States/KE/7.2.jpg)">
+                          <div class="center-y">
+                             <h3></h3>
+                            <a href="#"></a>	
+                          </div>
+                        </li>
+                        <li style="background-image:url(../assets/img/States/KE/7.3.jpg)">
+                          <div class="center-y">
+                             <h3></h3>
+                            <a href="#"></a>	
+                          </div>
+                        </li>
+                      </ul>
+              
+                      <ul>
+                        <nav>
+                          <a href="#"></a>
+                          <a href="#"></a>
+                          <a href="#"></a>
+                        </nav>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               
+            <!-- Modal for Slider 8 -->
+           <div class="modal" id="modalSlider8">
+            <div class="modal-content">
+              <span class="close" id="closeModal8">&times;</span>
+                <div class="intro">
+                  <div class="left">
+                    <div>
+                      <span class="rainbow-text container1">Explore more about</span>
+                      <h1 style="color: #f70000;"><strong>Kodungallur Bhagavathy Temple</strong> </h1>
+                      <div class="divDestDesc" style="overflow-y: scroll;">                  
+                        <p>Sree Kurumba Bhagavathy Temple in Kerala is one of India's oldest functioning temples, famed as the head of 64 Bhadrakali shrines. </p>
+                        <p>Five 'Sri Chakras', said to have been installed by Adi Shankaracharya, are believed to be the main source of the powers of this deity.</p>
+                        <p>Bharani festival, Thalappoli festival, Navarathri festival, Chandattam are the major festivals. </p>
+                      </div>
+                      <a href="https://kodungallursreekurumbabhagavathytemple.org/">Learn more</a>
+                    </div>
+                  </div>
+          
+                  <div class="slider">
+                    <ul>
+                      <li style="background-image:url(../assets/img/States/KE/8.1.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>		
+                        </div>
+                      </li>
+                      <li style="background-image:url(../assets/img/States/KE/8.2.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>		
+                        </div>
+                      </li>
+                      <li style="background-image:url(../assets/img/States/KE/8.3.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>	
+                        </div>
+                      </li>
+                    </ul>
+            
+                    <ul>
+                      <nav>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                      </nav>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+             
+            <!-- Modal for Slider 9 -->
+           <div class="modal" id="modalSlider9">
+            <div class="modal-content">
+              <span class="close" id="closeModal9">&times;</span>
+                <div class="intro">
+                  <div class="left">
+                    <div>
+                      <span class="rainbow-text container1">Explore more about</span>
+                      <h1 style="color: #f70000;"><strong>Thirunelli Temple (Wayanad)</strong> </h1>
+                      <div class="divDestDesc" style="overflow-y: scroll;">                  
+                        <p>Thirunelli Temple is an ancient Maha Vishnu shrine nestled in the Brahmagiri Hills of Wayanad, Kerala.</p>
+                        <p>It is renowned as the "Kashi of the South" and is the only temple in India where devotees can perform all ancestral and life-cycle rituals in one location.</p> 
+                        <p>In this holy land, the Papanasini flows as the source of salvation. Papanasini is born somewhere in Brahmagiri. </p>
+                        <p>The nearby Gunnika cave temple is dedicated to Lord Shiva.</p>
+                      </div>
+                      <a href="https://thirunellytemple.in/" target="_blank">Learn more</a>
+                    </div>
+                  </div>
+          
+                  <div class="slider">
+                    <ul>
+                      <li style="background-image:url(../assets/img/States/KE/9.1.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>		
+                        </div>
+                      </li>
+                      <li style="background-image:url(../assets/img/States/KE/9.2.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>		
+                        </div>
+                      </li>
+                      <li style="background-image:url(../assets/img/States/KE/9.3.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>	
+                        </div>
+                      </li>
+                    </ul>
+            
+                    <ul>
+                      <nav>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                      </nav>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+ 
+            <!-- Modal for Slider 10 -->
+            <div class="modal" id="modalSlider10">
+              <div class="modal-content">
+                <span class="close" id="closeModal10">&times;</span>
+                  <div class="intro">
+                    <div class="left">
+                      <div>
+                        <span class="rainbow-text container1">Explore more about</span>
+                        <h1 style="color: #f70000;"><strong>Aazhimala Shiva Temple</strong> </h1>
+                        <div class="divDestDesc" style="overflow-y: scroll;">                  
+                          <p>This Ancient place was one of the hide out of Pandavas who were in disguise. Natural caves are found still in between the rocks. To quench Panchalis thirst, Bheemasena had to make a hole in the rock with his knee to fill the  water is a reminder of ancient times.</p>
+                          <p>The Azhimala Shiva Temple in Kerala is most famous for its towering 58-foot-tall statue of Lord Shiva in the Gangadhareshwara form.</p>
+                          <p> It hosts significant cultural and spiritual gatherings, most notably the Naranga Vilakku (held annually in January/February) and Maha Shivaratri.</p>
+                        </div>
+                        <a href="https://aazhimalasivatemple.in/">Learn more</a>
+                      </div>
+                    </div>
+            
+                    <div class="slider">
+                      <ul>
+                        <li style="background-image:url(../assets/img/States/KE/10.1.jpg)">
+                          <div class="center-y">
+                             <h3></h3>
+                            <a href="#"></a>	
+                          </div>
+                        </li>
+                        <li style="background-image:url(../assets/img/States/KE/10.2.jpg)">
+                          <div class="center-y">
+                             <h3></h3>
+                            <a href="#"></a>	
+                          </div>
+                        </li>
+                        <li style="background-image:url(../assets/img/States/KE/10.3.jpg)">
+                          <div class="center-y">
+                             <h3></h3>
+                            <a href="#"></a>	
+                          </div>
+                        </li>
+                        <li style="background-image:url(../assets/img/States/KE/10.4.jpg)">
+                          <div class="center-y">
+                             <h3></h3>
+                            <a href="#"></a>	
+                          </div>
+                        </li>
+                      </ul>
+              
+                      <ul>
+                        <nav>
+                          <a href="#"></a>
+                          <a href="#"></a>
+                          <a href="#"></a>
+                        </nav>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             
+            <!-- Continue adding modals for each shop (modalSlider3 to modalSlider8) -->
+          
+
+
+            <br/><br/>
+            <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+<script src="{% static 'js/states.js' %}"></script>
+
+</body>
+</html>

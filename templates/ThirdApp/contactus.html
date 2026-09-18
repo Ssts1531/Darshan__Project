@@ -1,0 +1,246 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600" rel="stylesheet">
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+  <!-- Favicons -->
+ <link href="../assets/img/logo.png" rel="icon">
+  <link href="../assets/img/logo.png" rel="apple-touch-icon">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #ff6700, #ffba08);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 450px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Form */
+.form-group {
+  position: relative;
+  margin: 20px 0;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.form-group label {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  color: #aaa;
+  transform: translateY(-50%);
+  transition: 0.3s;
+  background: #fff;
+  padding: 0 5px;
+}
+
+input:focus + label,
+input:valid + label,
+textarea:focus + label,
+textarea:valid + label {
+  top: -8px;
+  font-size: 12px;
+  color: #ff6700;
+}
+/* Check boox*/
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.checkbox input {
+  width: auto;
+  cursor: pointer;
+}
+
+.checkbox label {
+  position: static;
+  transform: none;
+  color: #555;
+  cursor: pointer;
+}
+
+/* Button */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #ff6700, #ffba08);
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Success Screen */
+.success-box {
+  display: none;
+}
+
+.success-box h2 {
+  color: #ff6700;
+  margin-bottom: 10px;
+}
+
+.home-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #ff6700;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+  }
+}
+
+#rightClickMsg {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #ff4d4d;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-size: 14px;
+  display: none;
+  z-index: 9999;
+}
+</style>
+</head>
+
+<body>
+<!-- Toast Container -->
+<div id="toastContainer"></div>
+<div class="container">
+
+  <!-- FORM -->
+  <div id="formBox">
+    <h2>Contact Us</h2>
+
+    <form id="form">
+      <div class="form-group">
+        <input type="text" id="name" required>
+        <label>Name*</label>
+      </div>
+
+      <div class="form-group">
+        <input type="email" id="email" required>
+        <label>Email*</label>
+      </div>
+
+      <div class="form-group">
+        <textarea id="message" required></textarea>
+        <label>Message*</label>
+      </div>
+
+      <div class="checkbox">
+        <input type="checkbox" id="human">
+        <label for="human">I am not a robot</label>
+      </div>
+<!--
+      <div class="g-recaptcha" data-sitekey="6LdtUdosAAAAAL0LrOipudTQmFLAef_P2-ikcWrK">
+        <div style="width: 304px; height: 78px;" async defer></script>
+        <div><iframe title="reCAPTCHA" width="304" height="78" role="presentation" name="a-pchudzp3ek70" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Le093oUAAAAAIh9RLRCszm2-IR70S44D0oGTr2e&amp;co=aHR0cHM6Ly93d3cudmlzaXRtZWR3YXkub3JnOjQ0Mw..&amp;hl=en&amp;v=dNfi_jsbkQb4Hbw7F1b82Uia&amp;size=normal&amp;anchor-ms=20000&amp;execute-ms=30000&amp;cb=kwlcuhg2v6us">
+        </iframe>
+      </div>
+      <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;">
+      </textarea>
+    </div>
+    <iframe style="display: none;"></iframe>
+    </div>
+-->
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+  </div>
+
+  <!-- SUCCESS MESSAGE -->
+  <div class="success-box" id="successBox">
+    <h2>✅ Thank You!</h2>
+    <p>Thank you for contacting us. We will reach out to you shortly.</p>
+    <a href="/Home" class="home-btn">Back to Home</a>
+  </div>
+
+</div>
+
+<script>
+const form = document.getElementById('form');
+const formBox = document.getElementById('formBox');
+const successBox = document.getElementById('successBox');
+
+function validateEmail(email) {
+  return /^[^ ]+@[^ ]+\.[a-z]{2,3}$/.test(email);
+}
+
+form.onsubmit = (e) => {
+  e.preventDefault();
+
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
+  const human = document.getElementById('human').checked;
+
+  if (!human) return alert("Please confirm you are not a robot");
+  if (!validateEmail(email)) return alert("Invalid email address");
+  if (!name || !message) return alert("All fields are required");
+
+  // Hide form & show success message
+  formBox.style.display = "none";
+  successBox.style.display = "block";
+};
+
+document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+
+  const msg = document.getElementById("rightClickMsg");
+  msg.innerText = "Right click is disabled on this page";
+  msg.style.display = "block";
+
+  // Auto hide after 2 seconds
+  setTimeout(() => {
+    msg.style.display = "none";
+  }, 2000);
+});
+</script>
+
+</body>
+</html>
