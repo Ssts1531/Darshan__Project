@@ -117,7 +117,7 @@
             <li><a href="#"><strong>VEDAS</strong></a></li>
             <li class="dropdown"><a href="#"><strong>SLOKAS</strong> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
-                
+
                 <li class="dropdown"><a href="#"><span>Slokas</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                   <ul>
                     <li><a href="https://shlokam.org/index/">Shlokam</a></li>
@@ -136,7 +136,7 @@
                     <li><a href="https://stotranidhi.com/vratalu-in-telugu/">Vratalu</a></li>
                     <li><a href="https://stotranidhi.com/anubandham/sandhya-vandanam-in-telugu/">Sandhya Vandanam</a></li>
                   </ul>
-                </li>  
+                </li>
               </ul>
             </li>
             <li class="dropdown"><a href="#"><strong>Books</strong> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -145,7 +145,7 @@
                 <li><a href="https://stotranidhi.com/ebooks/">E-bOOKS</a></li>
                 <li><a href="https://stotranidhi.com/errata/">Errata</a></li>
               </ul>
-            </li>  
+            </li>
               <li><a href="/Contactus"><strong>Contact</strong></a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -173,7 +173,7 @@
           </div>
           <div class="col-lg-6 order-2 order-lg-1 content">
             <div class="title">ABOUT US</div>
-            
+
             <p>Darshan, We are group of volunteers who wants to gather as much information as possible regarding Hindu temples in India and provide in our channel <strong>(Our Temples Info)</strong> and website – <strong>www.darshan.com</strong></p>
 
             <div class="title">objective</div>
@@ -181,14 +181,14 @@
             <ul>
               <li><i class="bi bi-check2-all"></i>
               <span>Our objective is to have every devotee to visit all temples and get blessings. </span></li>
-              
+
               <li><i class="bi bi-check2-all"></i>
                <span>Though we try to provide as accurate information as possible, but validation of the information is not guaranteed.</span></li>
 
-              <li><i class="bi bi-check2-all"></i> 
+              <li><i class="bi bi-check2-all"></i>
                 <span> This does not mean that you will not find any useful information about temples however, darshan.info will not guarantee the validity of the information.</span></li>
             </ul>
-                               
+
           </div>
         </div>
 
@@ -196,7 +196,7 @@
 
     </section><!-- /About Section -->
 
-       
+
   </main>
 
    <footer id="footer" class="footer">
@@ -274,7 +274,7 @@
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
-{#  <div id="preloader"></div>#}
+  <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
   <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -291,3 +291,455 @@
 </body>
 
 </html>
+
+
+
+{#<head>#}
+{#  <meta charset="utf-8">#}
+{#  <meta content="width=device-width, initial-scale=1.0" name="viewport">#}
+{##}
+{#  <title>About Us</title>#}
+{#  <meta name="description" content="">#}
+{#  <meta name="keywords" content="">#}
+{##}
+{#  <!-- Favicons -->#}
+{#  <link href="{% static 'img/logo.png' %}" rel="icon">#}
+{#  <link href="{% static 'img/logo.png' %}" rel="apple-touch-icon">#}
+{##}
+{#  <!-- Fonts -->#}
+{#  <link href="https://fonts.googleapis.com" rel="preconnect">#}
+{#  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>#}
+{#  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"#}
+{#        rel="stylesheet">#}
+{##}
+{#  <!-- Vendor CSS Files -->#}
+{#  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">#}
+{#  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">#}
+{#  <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">#}
+{#  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">#}
+{#  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">#}
+{##}
+{#  <!-- Main CSS File -->#}
+{#  <link href="{% static 'css/main.css' %}" rel="stylesheet">#}
+{##}
+{#  <style>#}
+{#    @import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Shadows+Into+Light+Two&family=Sour+Gummy:wght@100..900&family=Yellowtail&display=swap');#}
+{##}
+{#    .aboutme {#}
+{#      display: flex;#}
+{#      flex-direction: row;#}
+{#      align-items: center;#}
+{#    }#}
+{##}
+{#    #photo {#}
+{#      width: 600px;#}
+{#      height: 850px;#}
+{#      margin-right: 20px;#}
+{#    }#}
+{##}
+{#    .title,#}
+{#    .words-container {#}
+{#      display: flex;#}
+{#      flex-direction: column;#}
+{#      align-items: center;#}
+{#    }#}
+{##}
+{#    .title {#}
+{#      font-size: 100px;#}
+{#      font-family: "Yellowtail", cursive;#}
+{#      text-align: center;#}
+{#    }#}
+{##}
+{#    .words {#}
+{#      font-family: "Sour Gummy", sans-serif;#}
+{#      font-size: 30px;#}
+{#      text-align: center;#}
+{#    }#}
+{##}
+{#    .red-name {#}
+{#      color: red;#}
+{#    }#}
+{##}
+{#    @media (max-width: 768px) {#}
+{#      .title {#}
+{#        font-size: 55px;#}
+{#      }#}
+{#    }#}
+{#  </style>#}
+{#</head>#}
+{##}
+{#<body class="starter-page-page">#}
+{##}
+{#  <!-- Header -->#}
+{#  <header id="header" class="header fixed-top">#}
+{##}
+{#    <div class="topbar d-flex align-items-center">#}
+{#      <div class="container d-flex justify-content-center justify-content-md-between">#}
+{##}
+{#        <div class="contact-info d-flex align-items-center">#}
+{#          <i class="bi bi-envelope d-flex align-items-center">#}
+{#            <a href="#" style="color: white;">#}
+{#              info.darshnam@gmail.com#}
+{#            </a>#}
+{#          </i>#}
+{##}
+{#          <i class="bi bi-phone d-flex align-items-center ms-4">#}
+{#            <span style="color: white;">+91 9876543210</span>#}
+{#          </i>#}
+{#        </div>#}
+{##}
+{#        <div class="languages d-none d-md-flex align-items-center">#}
+{#          <ul>#}
+{#            <li>En</li>#}
+{#            <li><a href="#">Te</a></li>#}
+{#          </ul>#}
+{#        </div>#}
+{##}
+{#      </div>#}
+{#    </div>#}
+{##}
+{#    <!-- Branding -->#}
+{#    <div class="branding d-flex align-items-center">#}
+{##}
+{#      <div class="container position-relative d-flex align-items-center justify-content-between">#}
+{##}
+{#        <a href="/Home" class="logo d-flex align-items-center me-auto me-xl-0">#}
+{#          <img src="{% static 'img/logo.png' %}" alt="Logo">#}
+{#          <img src="{% static 'img/logo1.PNG' %}" alt="Logo 1">#}
+{#        </a>#}
+{##}
+{#        <!-- Navigation -->#}
+{#        <nav id="navmenu" class="navmenu">#}
+{#          <ul>#}
+{#            <li>#}
+{#              <a href="/Home">#}
+{#                <strong>HOME</strong>#}
+{#              </a>#}
+{#            </li>#}
+{##}
+{#            <li>#}
+{#              <a href="#" class="active">#}
+{#                <strong>ABOUT US</strong>#}
+{#              </a>#}
+{#            </li>#}
+{##}
+{#            <li>#}
+{#              <a href="#"><strong>DONATIONS</strong></a>#}
+{#            </li>#}
+{##}
+{#            <li>#}
+{#              <a href="#"><strong>OUR POJA</strong></a>#}
+{#            </li>#}
+{##}
+{#            <li>#}
+{#              <a href="#"><strong>VEDAS</strong></a>#}
+{#            </li>#}
+{##}
+{#            <li class="dropdown">#}
+{#              <a href="#">#}
+{#                <strong>SLOKAS</strong>#}
+{#                <i class="bi bi-chevron-down toggle-dropdown"></i>#}
+{#              </a>#}
+{##}
+{#              <ul>#}
+{#                <li class="dropdown">#}
+{#                  <a href="#">#}
+{#                    <span>Slokas</span>#}
+{#                    <i class="bi bi-chevron-down toggle-dropdown"></i>#}
+{#                  </a>#}
+{##}
+{#                  <ul>#}
+{#                    <li>#}
+{#                      <a href="https://shlokam.org/index/">Shlokam</a>#}
+{#                    </li>#}
+{#                    <li>#}
+{#                      <a href="https://shlokam.org/tag/stotram/">Stotram</a>#}
+{#                    </li>#}
+{#                    <li>#}
+{#                      <a href="https://shlokam.org/tag/mantra/">Mantram</a>#}
+{#                    </li>#}
+{#                    <li>#}
+{#                      <a href="https://shlokam.org/tag/suktam/">Suktam</a>#}
+{#                    </li>#}
+{#                    <li>#}
+{#                      <a href="https://shlokam.org/category/Upanishad/">Upanishads</a>#}
+{#                    </li>#}
+{#                  </ul>#}
+{#                </li>#}
+{##}
+{#                <li>#}
+{#                  <a href="https://shlokam.org/bhagavad-gita/">Bhagavad Gita</a>#}
+{#                </li>#}
+{##}
+{#                <li>#}
+{#                  <a href="https://www.valmikiramayan.net/">Ramayanam</a>#}
+{#                </li>#}
+{##}
+{#                <li>#}
+{#                  <a href="https://www.srimadbhagavatamclass.com/">Bhagavatam</a>#}
+{#                </li>#}
+{##}
+{#                <li class="dropdown">#}
+{#                  <a href="#">#}
+{#                    <span>Anushtanam</span>#}
+{#                    <i class="bi bi-chevron-down toggle-dropdown"></i>#}
+{#                  </a>#}
+{##}
+{#                  <ul>#}
+{#                    <li>#}
+{#                      <a href="https://stotranidhi.com/puja-vidhanamu/">Pujalu</a>#}
+{#                    </li>#}
+{#                    <li>#}
+{#                      <a href="https://stotranidhi.com/vratalu-in-telugu/">Vratalu</a>#}
+{#                    </li>#}
+{#                    <li>#}
+{#                      <a href="https://stotranidhi.com/anubandham/sandhya-vandanam-in-telugu/">#}
+{#                        Sandhya Vandanam#}
+{#                      </a>#}
+{#                    </li>#}
+{#                  </ul>#}
+{#                </li>#}
+{#              </ul>#}
+{#            </li>#}
+{##}
+{#            <li class="dropdown">#}
+{#              <a href="#">#}
+{#                <strong>Books</strong>#}
+{#                <i class="bi bi-chevron-down toggle-dropdown"></i>#}
+{#              </a>#}
+{##}
+{#              <ul>#}
+{#                <li>#}
+{#                  <a href="https://stotranidhi.com/books/">Printed Books</a>#}
+{#                </li>#}
+{#                <li>#}
+{#                  <a href="https://stotranidhi.com/ebooks/">E-Books</a>#}
+{#                </li>#}
+{#                <li>#}
+{#                  <a href="https://stotranidhi.com/errata/">Errata</a>#}
+{#                </li>#}
+{#              </ul>#}
+{#            </li>#}
+{##}
+{#            <li>#}
+{#              <a href="/Contactus">#}
+{#                <strong>CONTACT</strong>#}
+{#              </a>#}
+{#            </li>#}
+{#          </ul>#}
+{##}
+{#          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>#}
+{#        </nav>#}
+{##}
+{#      </div>#}
+{#    </div>#}
+{#  </header>#}
+{##}
+{#  <!-- Main Content -->#}
+{#    <div class="main" style="display: block !important; visibility: visible !important; opacity: 1 !important;">#}
+{##}
+{#    <!-- About Section -->#}
+{#    <section id="about" class="about section">#}
+{##}
+{#      <div class="container" data-aos="fade-up" data-aos-delay="100">#}
+{##}
+{#        <div class="row gy-4">#}
+{##}
+{#          <!-- Image -->#}
+{#          <div class="col-lg-6 order-1 order-lg-2">#}
+{##}
+{#            <img#}
+{#              src="{% static 'img/States/OD/1.0.jpg' %}"#}
+{#              class="img-fluid about-img"#}
+{#              width="640"#}
+{#              alt="Temple">#}
+{##}
+{#            <br><br>#}
+{##}
+{#            <a href="/Contactus">#}
+{#              <button type="button" class="btn btn-outline-danger btn-lg">#}
+{#                Contact Us#}
+{#              </button>#}
+{#            </a>#}
+{##}
+{#          </div>#}
+{##}
+{#          <!-- Content -->#}
+{#          <div class="col-lg-6 order-2 order-lg-1 content">#}
+{##}
+{#            <div class="title">ABOUT US</div>#}
+{##}
+{#            <p>#}
+{#              Darshan, We are a group of volunteers who want to gather as much#}
+{#              information as possible regarding Hindu temples in India and#}
+{#              provide it through our channel#}
+{#              <strong>(Our Temples Info)</strong> and website –#}
+{#              <strong>www.darshan.com</strong>.#}
+{#            </p>#}
+{##}
+{#            <div class="title">OBJECTIVE</div>#}
+{##}
+{#            <ul>#}
+{#              <li>#}
+{#                <i class="bi bi-check2-all"></i>#}
+{#                <span>#}
+{#                  Our objective is to help every devotee visit all temples#}
+{#                  and receive blessings.#}
+{#                </span>#}
+{#              </li>#}
+{##}
+{#              <li>#}
+{#                <i class="bi bi-check2-all"></i>#}
+{#                <span>#}
+{#                  Though we try to provide accurate information, validation#}
+{#                  of the information is not guaranteed.#}
+{#                </span>#}
+{#              </li>#}
+{##}
+{#              <li>#}
+{#                <i class="bi bi-check2-all"></i>#}
+{#                <span>#}
+{#                  This does not mean that you will not find useful information#}
+{#                  about temples. However, darshan.info does not guarantee the#}
+{#                  validity of the information.#}
+{#                </span>#}
+{#              </li>#}
+{#            </ul>#}
+{##}
+{#          </div>#}
+{##}
+{#        </div>#}
+{#      </div>#}
+{#    </section>#}
+{##}
+{#  </div>#}
+{##}
+{#  <!-- Footer -->#}
+{#  <footer id="footer" class="footer">#}
+{##}
+{#    <div class="container footer-top">#}
+{##}
+{#      <div class="row gy-4">#}
+{##}
+{#        <!-- Footer About -->#}
+{#        <div class="col-lg-4 col-md-6 footer-about">#}
+{##}
+{#          <a href="/Home" class="logo d-flex align-items-center">#}
+{#            <span class="sitename">#}
+{#              <img src="{% static 'img/logo2.png' %}" alt="Darshan Logo">#}
+{#            </span>#}
+{#          </a>#}
+{##}
+{#          <div class="footer-contact pt-3">#}
+{#            <p>Hyderabad</p>#}
+{#            <p>Telangana, India</p>#}
+{#            <p class="mt-3">#}
+{#              <strong>Phone:</strong>#}
+{#              <span>+91 9876543210</span>#}
+{#            </p>#}
+{#            <p>#}
+{#              <strong>Email:</strong>#}
+{#              <span>info.darshnam@gmail.com</span>#}
+{#            </p>#}
+{#          </div>#}
+{##}
+{#          <div class="social-links d-flex mt-4">#}
+{#            <a href="#"><i class="bi bi-twitter-x"></i></a>#}
+{#            <a href="#"><i class="bi bi-facebook"></i></a>#}
+{#            <a href="#"><i class="bi bi-instagram"></i></a>#}
+{#            <a href="#"><i class="bi bi-linkedin"></i></a>#}
+{#          </div>#}
+{##}
+{#        </div>#}
+{##}
+{#        <!-- Useful Links -->#}
+{#        <div class="col-lg-2 col-md-3 footer-links">#}
+{#          <h4>Useful Links</h4>#}
+{##}
+{#          <ul>#}
+{#            <li><a href="/Home">Home</a></li>#}
+{#            <li><a href="#">About Us</a></li>#}
+{#            <li><a href="#">Services</a></li>#}
+{#            <li><a href="#">Terms of Service</a></li>#}
+{#            <li><a href="#">Privacy Policy</a></li>#}
+{#          </ul>#}
+{#        </div>#}
+{##}
+{#        <!-- Services -->#}
+{#        <div class="col-lg-2 col-md-3 footer-links">#}
+{#          <h4>Our Services</h4>#}
+{##}
+{#          <ul>#}
+{#            <li><a href="#">Slokas</a></li>#}
+{#            <li><a href="#">Vedas</a></li>#}
+{#            <li><a href="#">Books</a></li>#}
+{#            <li><a href="#">Bhagavad Gita</a></li>#}
+{#            <li><a href="#">Ramayanam</a></li>#}
+{#          </ul>#}
+{#        </div>#}
+{##}
+{#        <!-- Newsletter -->#}
+{#        <div class="col-lg-4 col-md-12 footer-newsletter">#}
+{#          <h4>Our Newsletter</h4>#}
+{##}
+{#          <p>#}
+{#            Subscribe to our newsletter and receive the latest news about#}
+{#            Darshan and our services!#}
+{#          </p>#}
+{##}
+{#          <form action="/templates/forms/contact.php" method="post" class="php-email-form">#}
+{#            <div class="newsletter-form">#}
+{#              <input type="email" name="email" required>#}
+{#              <input type="submit" value="Subscribe">#}
+{#            </div>#}
+{##}
+{#            <div class="loading">Loading</div>#}
+{#            <div class="error-message"></div>#}
+{#            <div class="sent-message">#}
+{#              Your subscription request has been sent. Thank you!#}
+{#            </div>#}
+{#          </form>#}
+{#        </div>#}
+{##}
+{#      </div>#}
+{#    </div>#}
+{##}
+{#    <div class="container copyright text-center mt-4">#}
+{##}
+{#      <p>#}
+{#        © <span>Copyright</span>#}
+{#        <strong class="px-1 sitename">Darshan - 2024</strong>#}
+{#        <span>All Rights Reserved</span>#}
+{#      </p>#}
+{##}
+{#      <div class="credits">#}
+{#        Designed by <a href="#">Subbu</a>#}
+{#      </div>#}
+{##}
+{#    </div>#}
+{##}
+{#  </footer>#}
+{##}
+{#  <!-- Scroll Top -->#}
+{#  <a#}
+{#    href="#"#}
+{#    id="scroll-top"#}
+{#    class="scroll-top d-flex align-items-center justify-content-center">#}
+{#    <i class="bi bi-arrow-up-short"></i>#}
+{#  </a>#}
+{##}
+{#  <!-- Vendor JS Files -->#}
+{#  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>#}
+{#  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>#}
+{#  <script src="{% static 'vendor/aos/aos.js' %}"></script>#}
+{#  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>#}
+{#  <script src="{% static 'vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>#}
+{#  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>#}
+{#  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>#}
+{##}
+{#  <!-- Main JS File -->#}
+{#  <script src="{% static 'js/main.js' %}"></script>#}
+{##}
+{#</body>#}
+{##}
+{#</html>#}
