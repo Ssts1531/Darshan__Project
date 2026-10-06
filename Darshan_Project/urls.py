@@ -33,7 +33,7 @@ urlpatterns = [
     path('Sakthipeetam/', views.sakthipeetam_view),
     path('Tamilnadu/', views.TN_view),
     path('Telangana/', views.TG_view),
-
+    path('Uttar Pradesh/', views.UP_view),
 
     re_path('^$', views.homepage_view),
 ]

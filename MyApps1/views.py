@@ -29,6 +29,9 @@ def MH_view(request):
 def OD_view(request):
     return render(request, 'ThirdApp/Odisha.html')
 
+def UP_view(request):
+    return render(request, 'ThirdApp/Uttar Pradesh.html')
+
 def sakthipeetam_view(request):
     return render(request, 'ThirdApp/SakthiPeetam1.html')
 
