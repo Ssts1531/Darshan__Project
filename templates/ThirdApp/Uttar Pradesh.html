@@ -1,0 +1,966 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Kerala</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="https://ih1.redbubble.net/image.1909441780.5259/st,small,507x507-pad,600x600,f8f8f8.u2.jpg" rel="icon">
+  <link href="https://ih1.redbubble.net/image.1909441780.5259/st,small,507x507-pad,600x600,f8f8f8.u2.jpg" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+    <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+  <!-- Main CSS File -->
+  <!--<link href="assets/css/main.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="{% static 'css/states.css' %}">
+
+  <!-- =======================================================
+  * Template Name: Restaurantly
+  * Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+</head>
+
+    <body class="index-page">
+<!--        <header id="header" class="header fixed-top">
+
+          <div class="topbar d-flex align-items-center">
+            <div class="container d-flex justify-content-center justify-content-md-between">
+              <div class="contact-info d-flex align-items-center">
+                <i class="bi bi-envelope d-flex align-items-center"><a href="#" style="color:White">contact@darshan.com</a></i>
+                <i class="bi bi-phone d-flex align-items-center ms-4"><span style="color:White" >+91 9876543210</span></i>
+              </div>
+              <div class="languages d-none d-md-flex align-items-center">
+                <ul>
+                  <li>En</li>
+                  <li><a href="#">Te</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="branding d-flex align-items-cente">
+
+            <div class="container position-relative d-flex align-items-center justify-content-between">
+              <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+                 <img src="https://ih1.redbubble.net/image.1909441780.5259/st,small,507x507-pad,600x600,f8f8f8.u2.jpg">
+                <img src="assets/img/logo1.png" alt="">
+              </a>
+
+
+              <nav id="navmenu" class="navmenu">
+                <ul>
+                  <li><a href="#" class=""><strong>HOME</strong><br></a></li>
+                  <li><a href="aboutus.html"><strong>ABOUT US</strong></a></li>
+                  <li><a href="#"><strong>DONATIONS</strong></a></li>
+                  <li><a href="#"><strong>OUR POJA</strong></a></li>
+                  <li><a href="#"><strong>VEDAS</strong></a></li>
+                  <li class="dropdown"><a href="#"><strong>SLOKAS</strong> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+
+                      <li class="dropdown"><a href="#"><span>Slokas</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                          <li><a href="https://shlokam.org/index/">Shlokam</a></li>
+                          <li><a href="https://shlokam.org/tag/stotram/">Stotram</a></li>
+                          <li><a href="https://shlokam.org/tag/mantra/">Mantram</a></li>
+                          <li><a href="https://shlokam.org/tag/suktam/">Suktam</a></li>
+                          <li><a href="https://shlokam.org/category/Upanishad/">Upanishads</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="https://shlokam.org/bhagavad-gita/">Bhagavad Gita</a></li>
+                      <li><a href="https://www.valmikiramayan.net/">Ramayanam</a></li>
+                      <li><a href="https://www.srimadbhagavatamclass.com/">Bhagavatam</a></li>
+                      <li class="dropdown"><a href="#"><span>Anushtanam</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                          <li><a href="https://stotranidhi.com/puja-vidhanamu/">Pujalu</a></li>
+                          <li><a href="https://stotranidhi.com/vratalu-in-telugu/">Vratalu</a></li>
+                          <li><a href="https://stotranidhi.com/anubandham/sandhya-vandanam-in-telugu/">Sandhya Vandanam</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a href="#"><strong>Books</strong> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                      <li><a href="https://stotranidhi.com/books/">Printed Books</a></li>
+                      <li><a href="https://stotranidhi.com/ebooks/">E-bOOKS</a></li>
+                      <li><a href="https://stotranidhi.com/errata/">Errata</a></li>
+                    </ul>
+                  </li>
+                    <li><a href="#contact"><strong>Contact</strong></a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+              </nav>
+
+            </div>
+
+          </div>
+
+        </header> -->
+            <!---->
+      <div style="background-color: #f70000;"><br/>
+        <h1 style="text-align: center; color: #f3ea3c;"><strong>*** Uttar Pradesh ***</strong></h1><br/>
+      </div>
+      <div>
+                <a style="color: #f70000;" href="index.html">Home  >>></a> Uttar Pradesh
+      </div><br/>
+
+            <div class="container">
+               <!-- Card_1 -->
+              <div class="card" id="showSliderBtn1">
+                <img src="../assets/img/States/UP/1.0.jpg" alt="Card Image 1">
+                <div class="card-content">
+                  <h3 class="card-title">shop1</h3>
+                  <p class="card-description"><strong>Shri Ram Janmabhoomi Mandir - Ayodhya</strong></p>
+                  <button href="#" class="card-button">View More</button>
+                </div>
+              </div>
+              <!-- Card_2 -->
+              <div class="card" id="showSliderBtn2">
+                <img src="../assets/img/States/UP/2.0.jpg" alt="Card Image 2">
+                <div class="card-content">
+                  <h3 class="card-title">Shop 2</h3>
+                  <p class="card-description"><strong>Kashi Vishwanath Temple - Varanasi</strong></p>
+                  <button href="#" class="card-button">View More</button>
+                </div>
+              </div>
+                <!-- Card_3 -->
+              <div class="card" id="showSliderBtn3">
+                <img src="../assets/img/States/UP/3.0.jpg" alt="Card Image 3">
+                <div class="card-content">
+                  <h3 class="card-title">Shop 3</h3>
+                  <p class="card-description"><strong>Shri Krishna Janmabhoomi Temple -Mathura</strong></p>
+                  <button href="#" class="card-button">View More</button>
+                </div>
+              </div>
+
+              <!-- card 4 -->
+              <div class="card" id="showSliderBtn4">
+                <img src="../assets/img/States/KS/4.0.jpg" alt="Card Image 4">
+                <div class="card-content">
+                  <h3 class="card-title">Shop 4</h3>
+                  <p class="card-description"><strong>Banke Bihari Temple - Vrindavan</strong></p>
+                  <button href="#" class="card-button">View More</button>
+                </div>
+              </div>
+              <!-- card 5 -->
+              <div class="card" id="showSliderBtn5">
+                <img src="../assets/img/States/KS/5.0.jpg" alt="Card Image 5">
+                <div class="card-content">
+                  <h3 class="card-title">Shop 5</h3>
+                  <p class="card-description"><strong>Prem Mandir - Vrindavan</strong></p>
+                  <button href="#" class="card-button">View More</button>
+                </div>
+              </div>
+              <!-- card 6 -->
+              <div class="card" id="showSliderBtn6">
+                <img src="../assets/img/States/KS/6.0.jpg" alt="Card Image 6">
+                <div class="card-content">
+                  <h3 class="card-title">Shop 6</h3>
+                  <p class="card-description"><strong>Hanuman Garhi - Ayodhya</strong></p>
+                  <button href="#" class="card-button">View More</button>
+                </div>
+              </div>
+              <!-- card 7 -->
+              <div class="card" id="showSliderBtn7">
+                <img src="../assets/img/States/KS/7.0.jpg" alt="Card Image 7">
+                <div class="card-content">
+                  <h3 class="card-title">Shop 7</h3>
+                  <p class="card-description"><strong>Sankat Mochan Hanuman Temple - Lanka</strong></p>
+                  <button href="#" class="card-button">View More</button>
+                </div>
+              </div>
+              <!-- card 8 -->
+              <div class="card" id="showSliderBtn8">
+                <img src="../assets/img/States/KS/8.0.jpg" alt="Card Image 8">
+                <div class="card-content">
+                  <h3 class="card-title">Shop 8</h3>
+                  <p class="card-description"><strong>Gorakhnath Temple - Gorakhpur</strong></p>
+                  <button href="#" class="card-button">View More</button>
+                </div>
+              </div>
+              <!-- card 9 -->
+              <div class="card" id="showSliderBtn9">
+                <img src="../assets/img/States/KS/9.0.jpg" alt="Card Image 9">
+                <div class="card-content">
+                  <h3 class="card-title">Shop 9</h3>
+                  <p class="card-description"><strong>Vindhyavasini Devi Temple - Vindhyachal</strong></p>
+                  <button href="#" class="card-button">View More</button>
+                </div>
+              </div>
+              <!-- card 10 -->
+              <div class="card" id="showSliderBtn10">
+                <img src="../assets/img/States/KS/10.0.jpg" alt="Card Image 10">
+                <div class="card-content">
+                  <h3 class="card-title">Shop 10</h3>
+                  <p class="card-description"><strong>Alopi Devi - Prayagraj</strong></p>
+                  <button href="#" class="card-button">View More</button>
+                </div>
+              </div>
+              <!-- card 11 -->
+              <div class="card" id="showSliderBtn11">
+                <img src="../assets/img/States/KS/11.0.jpg" alt="Card Image 11">
+                <div class="card-content">
+                  <h3 class="card-title">Shop 11</h3>
+                  <p class="card-description"><strong>Lalita Devi -	Naimisharanya</strong></p>
+                  <a href="#" class="card-button">View More</a>
+                </div>
+              </div>
+              <!-- card 12 -->
+              <div class="card" id="showSliderBtn12">
+                <img src="../assets/img/States/KS/12.0.jpg" alt="Card Image 12">
+                <div class="card-content">
+                  <h3 class="card-title">Shop 12</h3>
+                  <p class="card-description"><strong>Kamadgiri - Chitrakoot</strong></p>
+                  <a href="#" class="card-button">View More</a>
+                </div>
+              </div>
+            <!-- card 13 -->
+            <div class="card" id="showSliderBtn13">
+              <img src="../assets/img/States/KS/13.0.jpg" alt="Card Image 13">
+              <div class="card-content">
+                <h3 class="card-title">Shop 13</h3>
+                <p class="card-description"><strong>Temple</strong></p>
+                <a href="#" class="card-button">View More</a>
+              </div>
+            </div>
+
+            </div>
+           <!-- Modal for Slider 1 -->
+           <div class="modal" id="modalSlider1">
+            <div class="modal-content">
+              <span class="close" id="closeModal1">&times;</span>
+                <div class="intro">
+                  <div class="left">
+                    <div>
+                    <span class="rainbow-text container1">Explore more about</span>
+
+                      <h1 style="color: #f70000;"><strong> Shri Ram Janmabhoomi Mandir </strong> </h1>
+                      <div class="divDestDesc" style="overflow-y: scroll;">
+                        <p>Ayodhya is a holy city situated on the banks of river Sarayu in Uttar Pradesh. It is one of the top places to visit in Uttar Pradesh, and among the most popular pilgrimage sites in India. It is about 135 km from Gorakhpur, and 140 km from Lucknow.</p>
+                        <p>Ayodhya or Awadh is the birthplace of the Hindu deity, Lord Ram Shri Ram. This holy city has been regarded as the first one of the seven most important pilgrimage sites for Hindus, and among the prominent places to visit near Kanpur.</p>
+                        <p> It is believed that a temple stood at the supposed birth spot of Rama, which was demolished by the orders of the Mughal emperor Babur and a mosque was erected in its place that was later demolished by Hindu mobs. The construction of the Ram Mandir commenced in 2020 and is the must-include in Ayodhya trip.</p>
+                        <p>The temple is of great religious significance for the Hindu communities. As a tourist, the undeniable spiritual vibe around the temple, accentuated by the constant sound of hymns and the chants of 'Jai Shree Ram', will surely swoon your senses. </p>
+                      </div>
+                      <a href="#">Learn more</a>
+                    </div>
+                  </div>
+
+                  <div class="slider">
+                    <ul>
+                      <li style="background-image:url(../assets/img/States/UP/1.1.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>
+                        </div>
+                      </li>
+                      <li style="background-image:url(../assets/img/States/UP/1.2.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>
+                        </div>
+                      </li>
+                      <li style="background-image:url(../assets/img/States/UP/1.3.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>
+                        </div>
+                      </li>
+                    </ul>
+
+                    <ul>
+                      <nav>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                      </nav>
+                    </ul>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal for Slider 2 -->
+           <div class="modal" id="modalSlider2">
+            <div class="modal-content">
+              <span class="close" id="closeModal2">&times;</span>
+                <div class="intro">
+                  <div class="left">
+                    <div>
+                      <span class="rainbow-text container1">Explore more about</span>
+                      <h1 style="color: #f70000;"><strong>Kashi Vishwanath Temple</strong> </h1>
+                      <div class="divDestDesc" style="overflow-y: scroll;">
+                        <p>In the sacred city of Varanasi, Kashi Vishwanath Jyotirlinga is among the Dwadasa Jyotirlinga which is located close to the banks of the Ganga River and captures the attention of millions of pilgrims to offer their prayers and seek blessings from Lord Shiva.</p>
+                        <p>The temple of Kashi Vishwanath is also known as the ‘Golden Temple of Varanasi’ because of its gold-plated dome.</p>
+                        <p>The Kashi Vishwanath beautifully represents the cycle of life and death. </p>
+                        <p>While wandering through the narrow lanes around the temple, visitors can hear the songs of the bells ringing, the view of the holy aartis and the feel of spirituality that will fill their hearts with wholesome divinity.</p>
+                        <p>The Kashi Vishwanath Temple has been a source of spiritual inspiration for many saints and sages.</p>
+                        <p><h4>History and Spiritual Significance of Kashi Vishwanath Jyotirlinga Temple</h4></p>
+                        <p>The history of the Kashi Vishwanath Jyotirlinga temple dates back to around 2500 years ago as it is believed that the temple was built by King Vikramaditya.</p>
+                        <p>The temple also occurs in the Kasha Kandra, an ancient document that the temple might be as old as the sixth century. The temple is even mentioned in several holy books of Hindus.</p>
+                        <p>The legendary story that is associated with the Jyotirlinga is that Lord Shiva presented himself as a beam of a huge pillar to solve the problem between Lord Brahma and Lord Vishnu where they would need to find the ends of the pillar to become the supreme power.</p>
+                        <p>No one succeeded in finding the ends of the pillar but Lord Brahma lied about the fact and made Shiva curse him to be not worshipped by anyone and gave the title of supremacy to Lord Vishnu.</p>
+                        <p>After the huge pillar disappeared from the three realms, a small portion of it remained here and became the Vishwanath Jyotirlinga.</p>
+                        <p><strong>Temple Timings:</strong> 03:00 AM to 11:00 PM</p>
+                        <h4>How to Reach?</h4>
+                        <p><strong>Nearest Airport:</strong> Lal Bahadur Shastri International Airport </br><strong>Nearest Railway Station:</strong>  Varanasi Junction</p>
+                        <p><strong>Special Attraction:</strong> People believe that while looking at the golden spire if one asks for a wish, it gets fulfilled.</p>
+                        <p>Also, it is believed that if a person lives or dies here will attain moksha.</p>
+                      </div>
+                      <a href="#">Learn more</a>
+                    </div>
+                  </div>
+
+                  <div class="slider">
+                    <ul>
+                      <li style="background-image:url(../assets/img/States/UP/3.1.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>
+                        </div>
+                      </li>
+                      <li style="background-image:url(../assets/img/States/UP/3.2.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>
+                        </div>
+                      </li>
+                      <li style="background-image:url(../assets/img/States/UP/3.3.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>
+                        </div>
+                      </li>
+                    </ul>
+
+                    <ul>
+                      <nav>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                      </nav>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal for Slider 3 -->
+           <div class="modal" id="modalSlider3">
+            <div class="modal-content">
+              <span class="close" id="closeModal3">&times;</span>
+                <div class="intro">
+                  <div class="left">
+                    <div>
+                      <span class="rainbow-text container1">Explore more about</span>
+                      <h1 style="color: #f70000;"><strong>Shri Krishna Janmabhoomi Temple </strong> </h1>
+                      <div class="divDestDesc" style="overflow-y: scroll;">
+                        <p>At a distance of 56 km from Agra, 159 km from Delhi, 419 km from Lucknow and 224 km from Jaipur, Mathura is an ancient city and also the district headquarters of Mathura in the state of Uttar Pradesh. Mathura is one of the popular tourist places near Agra. </p>
+                        <p>Mathura is one of the seven cities (Sapta Puri) considered holy by Hindus, the other six are Ayodhya, Haridwar, Varanasi, Kanchipuram, Ujjain and Dwarka. </p>
+                        <p> It is located at the banks of river Yamuna and is popularly known as the Brajbhoomi, the sacred land of Lord Krishna. </p>
+                        <p>The Sri Krishna Janmabhoomi temple is home to a prison cell called Garbha Griha that is believed to be the exact birthplace of Krishna. Large number of devotees visit this temple every year on Janmashtami.</p>
+                        <p>The city of Mathura has a rich history. In the ancient times, Mathura was an important point of culture and civilization.</p>
+                        <p>In the epic of Ramayana, the Ikshwaku prince Shatrughna slays a demon called Lavanasura and claims the land. Afterwards, the place came to be known as Madhuvan as it was thickly wooded, then Madhupura and later Mathura.</p>
+                        <p>The best time to visit the temple is during the Janmashtami festival, as the entire city celebrates it with great fanfare. </p>
+                        <p>Many rituals are done to celebrate the birth of the lord, and special celebrations take place within the temple premises that are worth seeing. </p>
+                      </div>
+                      <a href="#">Learn more</a>
+                    </div>
+                  </div>
+
+                  <div class="slider">
+                    <ul>
+                      <li style="background-image:url(../assets/img/States/UP/3.1.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>
+                        </div>
+                      </li>
+                      <li style="background-image:url(../assets/img/States/UP/3.2.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>
+                        </div>
+                      </li>
+                      <li style="background-image:url(../assets/img/States/UP/3.3.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>
+                        </div>
+                      </li>
+                    </ul>
+
+                    <ul>
+                      <nav>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                      </nav>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal for Slider 4 -->
+           <div class="modal" id="modalSlider4">
+            <div class="modal-content">
+              <span class="close" id="closeModal4">&times;</span>
+                <div class="intro">
+                  <div class="left">
+                    <div>
+                      <span class="rainbow-text container1">Explore more about</span>
+                      <h1 style="color: #f70000;"><strong>Banke Bihari Temple</strong> </h1>
+                      <div class="divDestDesc" style="overflow-y: scroll;">
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                      </div>
+                      <a href="#">Learn more</a>
+                    </div>
+                  </div>
+
+                  <div class="slider">
+                    <ul>
+                      <li style="background-image:url(../assets/img/States/UP/4.1.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>
+                        </div>
+                      </li>
+                      <li style="background-image:url(../assets/img/States/UP/4.2.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>
+                        </div>
+                      </li>
+                      <li style="background-image:url(../assets/img/States/UP/4.3.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>
+                        </div>
+                      </li>
+                    </ul>
+
+                    <ul>
+                      <nav>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                      </nav>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal for Slider 5 -->
+            <div class="modal" id="modalSlider5">
+              <div class="modal-content">
+                <span class="close" id="closeModal5">&times;</span>
+                  <div class="intro">
+                    <div class="left">
+                      <div>
+                        <span class="rainbow-text container1">Explore more about</span>
+                        <h1 style="color: #f70000;"><strong>Prem Mandir</strong> </h1>
+                        <div class="divDestDesc" style="overflow-y: scroll;">
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        </div>
+                        <a href="#">Learn more</a>
+                      </div>
+                    </div>
+
+                    <div class="slider">
+                      <ul>
+                        <li style="background-image:url(../assets/img/States/KS/5.1.jpg)">
+                          <div class="center-y">
+                            <h3></h3>
+                            <a href="#"></a>
+                          </div>
+                        </li>
+                        <li style="background-image:url(../assets/img/States/KS/5.2.jpg)">
+                          <div class="center-y">
+                            <h3></h3>
+                            <a href="#"></a>
+                          </div>
+                        </li>
+                        <li style="background-image:url(../assets/img/States/KS/5.3.jpg)">
+                          <div class="center-y">
+                            <h3></h3>
+                            <a href="#"></a>
+                          </div>
+                        </li>
+                      </ul>
+
+                      <ul>
+                        <nav>
+                          <a href="#"></a>
+                          <a href="#"></a>
+                          <a href="#"></a>
+                        </nav>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <!-- Modal for Slider 6 -->
+            <div class="modal" id="modalSlider6">
+              <div class="modal-content">
+                <span class="close" id="closeModal6">&times;</span>
+                  <div class="intro">
+                    <div class="left">
+                      <div>
+                         <span class="rainbow-text container1">Explore more about</span>
+                        <h1 style="color: #f70000;"><strong>Hanuman Garhi </strong> </h1>
+                        <div class="divDestDesc" style="overflow-y: scroll;">
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                        </div>
+                          <a target="_blank" href="https://chamundeshwaritemple.in/">Learn more</a>
+                      </div>
+                    </div>
+
+                    <div class="slider"> ''
+                      <ul>
+                        <li style="background-image:url(../assets/img/States/KS/6.1.jpg)">
+                          <div class="center-y">
+                             <h3></h3>
+                            <a href="#"></a>
+                          </div>
+                        </li>
+                        <li style="background-image:url(../assets/img/States/KS/6.2.jpg)">
+                          <div class="center-y">
+                             <h3></h3>
+                            <a href="#"></a>
+                          </div>
+                        </li>
+                        <li style="background-image:url(../assets/img/States/KS/6.3.jpg)">
+                          <div class="center-y">
+                             <h3></h3>
+                            <a href="#"></a>
+                          </div>
+                        </li>
+                      </ul>
+
+                      <ul>
+                        <nav>
+                          <a href="#"></a>
+                          <a href="#"></a>
+                          <a href="#"></a>
+                        </nav>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <!-- Modal for Slider 7 -->
+            <div class="modal" id="modalSlider7">
+              <div class="modal-content">
+                <span class="close" id="closeModal7">&times;</span>
+                  <div class="intro">
+                    <div class="left">
+                      <div>
+                        <span class="rainbow-text container1">Explore more about</span>
+                        <h1 style="color: #f70000;"><strong>Sankat Mochan Hanuman Temple</strong> </h1>
+                        <div class="divDestDesc" style="overflow-y: scroll;">
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                        </div>
+                        <a target="_blank" href="https://itms.kar.nic.in/hrcehome/index_temple.php?tid=7">Learn more</a>
+                      </div>
+                    </div>
+
+                    <div class="slider">
+                      <ul>
+                        <li style="background-image:url(../assets/img/States/KS/7.1.jpg)">
+                          <div class="center-y">
+                            <h3></h3>
+                            <a href="#"></a>
+                          </div>
+                        </li>
+                        <li style="background-image:url(../assets/img/States/KS/7.2.jpg)">
+                          <div class="center-y">
+                             <h3></h3>
+                            <a href="#"></a>
+                          </div>
+                        </li>
+                        <li style="background-image:url(../assets/img/States/KS/7.3.jpg)">
+                          <div class="center-y">
+                             <h3></h3>
+                            <a href="#"></a>
+                          </div>
+                        </li>
+                      </ul>
+
+                      <ul>
+                        <nav>
+                          <a href="#"></a>
+                          <a href="#"></a>
+                          <a href="#"></a>
+                        </nav>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <!-- Modal for Slider 8 -->
+           <div class="modal" id="modalSlider8">
+            <div class="modal-content">
+              <span class="close" id="closeModal8">&times;</span>
+                <div class="intro">
+                  <div class="left">
+                    <div>
+                      <span class="rainbow-text container1">Explore more about</span>
+                      <h1 style="color: #f70000;"><strong>Gorakhnath Temple</strong> </h1>
+                      <div class="divDestDesc" style="overflow-y: scroll;">
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                      </div>
+                      <a href="#">Learn more</a>
+                    </div>
+                  </div>
+
+                  <div class="slider">
+                    <ul>
+                      <li style="background-image:url(../assets/img/States/KS/8.1.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>
+                        </div>
+                      </li>
+                      <li style="background-image:url(../assets/img/States/KS/8.2.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>
+                        </div>
+                      </li>
+                      <li style="background-image:url(../assets/img/States/KS/8.3.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>
+                        </div>
+                      </li>
+                    </ul>
+
+                    <ul>
+                      <nav>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                      </nav>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal for Slider 9 -->
+           <div class="modal" id="modalSlider9">
+            <div class="modal-content">
+              <span class="close" id="closeModal9">&times;</span>
+                <div class="intro">
+                  <div class="left">
+                    <div>
+                      <span class="rainbow-text container1">Explore more about</span>
+                      <h1 style="color: #f70000;"><strong>Vindhyavasini Devi Temple</strong> </h1>
+                      <div class="divDestDesc" style="overflow-y: scroll;">
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                      </div>
+                      <a href="https://templeinkarnataka.com/melukote-cheluvanarayana-swamy-temple/" target="_blank">Learn more</a>
+                    </div>
+                  </div>
+
+                  <div class="slider">
+                    <ul>
+                      <li style="background-image:url(../assets/img/States/KS/9.1.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>
+                        </div>
+                      </li>
+                      <li style="background-image:url(../assets/img/States/KS/9.2.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>
+                        </div>
+                      </li>
+                      <li style="background-image:url(../assets/img/States/KS/9.3.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>
+                        </div>
+                      </li>
+                    </ul>
+
+                    <ul>
+                      <nav>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                      </nav>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal for Slider 10 -->
+            <div class="modal" id="modalSlider10">
+              <div class="modal-content">
+                <span class="close" id="closeModal10">&times;</span>
+                  <div class="intro">
+                    <div class="left">
+                      <div>
+                        <span class="rainbow-text container1">Explore more about</span>
+                        <h1 style="color: #f70000;"><strong>Alopi Devi</strong> </h1>
+                        <div class="divDestDesc" style="overflow-y: scroll;">
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                        </div>
+                        <a href="#">Learn more</a>
+                      </div>
+                    </div>
+
+                    <div class="slider">
+                      <ul>
+                        <li style="background-image:url(../assets/img/States/KS/10.1.jpg)">
+                          <div class="center-y">
+                             <h3></h3>
+                            <a href="#"></a>
+                          </div>
+                        </li>
+                        <li style="background-image:url(../assets/img/States/KS/10.2.jpg)">
+                          <div class="center-y">
+                             <h3></h3>
+                            <a href="#"></a>
+                          </div>
+                        </li>
+                        <li style="background-image:url(../assets/img/States/KS/10.3.jpg)">
+                          <div class="center-y">
+                             <h3></h3>
+                            <a href="#"></a>
+                          </div>
+                        </li>
+                      </ul>
+
+                      <ul>
+                        <nav>
+                          <a href="#"></a>
+                          <a href="#"></a>
+                          <a href="#"></a>
+                        </nav>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <!-- Modal for Slider 11 -->
+           <div class="modal" id="modalSlider11">
+            <div class="modal-content">
+              <span class="close" id="closeModal11">&times;</span>
+                <div class="intro">
+                  <div class="left">
+                    <div>
+                      <span class="rainbow-text container1">Explore more about</span>
+                      <h1 style="color: #f70000;"><strong>Lalita Devi Temple</strong> </h1>
+                      <div class="divDestDesc" style="overflow-y: scroll;">
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                      </div>
+                      <a href="https://www.iskconbangalore.org/" target="_blank">Learn more</a>
+                    </div>
+                  </div>
+
+                  <div class="slider">
+                    <ul>
+                      <li style="background-image:url(../assets/img/States/KS/11.1.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>
+                        </div>
+                      </li>
+                      <li style="background-image:url(../assets/img/States/KS/11.2.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>
+                        </div>
+                      </li>
+                      <li style="background-image:url(../assets/img/States/KS/11.3.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>
+                        </div>
+                      </li>
+                    </ul>
+
+                    <ul>
+                      <nav>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                      </nav>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal for Slider 12 -->
+            <div class="modal" id="modalSlider12">
+              <div class="modal-content">
+                <span class="close" id="closeModal12">&times;</span>
+                  <div class="intro">
+                    <div class="left">
+                      <div>
+                        <span class="rainbow-text container1">Explore more about</span>
+                        <h1 style="color: #f70000;"><strong>Kamadgiri Temple</strong> </h1>
+                        <div class="divDestDesc" style="overflow-y: scroll;">
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                          <p></p>
+                        </div>
+                        <a href="https://srikshetrahoranadu.com/" target="_blank">Learn more</a>
+                      </div>
+                    </div>
+
+                    <div class="slider">
+                      <ul>
+                        <li style="background-image:url(../assets/img/States/KS/12.1.jpg)">
+                          <div class="center-y">
+                             <h3></h3>
+                            <a href="#"></a>
+                          </div>
+                        </li>
+                        <li style="background-image:url(../assets/img/States/KS/12.2.jpg)">
+                          <div class="center-y">
+                             <h3></h3>
+                            <a href="#"></a>
+                          </div>
+                        </li>
+                        <li style="background-image:url(../assets/img/States/KS/12.3.jpg)">
+                          <div class="center-y">
+                             <h3></h3>
+                            <a href="#"></a>
+                          </div>
+                        </li>
+                      </ul>
+
+                      <ul>
+                        <nav>
+                          <a href="#"></a>
+                          <a href="#"></a>
+                          <a href="#"></a>
+                        </nav>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <!-- Modal for Slider 13 -->
+           <div class="modal" id="modalSlider13">
+            <div class="modal-content">
+              <span class="close" id="closeModal13">&times;</span>
+                <div class="intro">
+                  <div class="left">
+                    <div>
+                      <span class="rainbow-text container1">Explore more about</span>
+                      <h1 style="color: #f70000;"><strong> Temple</strong> </h1>
+                      <div class="divDestDesc" style="overflow-y: scroll;">
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                      </div>
+                      <a href="https://yedeyursiddalingeshwara.com/" target="_blank">Learn more</a>
+                    </div>
+                  </div>
+
+                  <div class="slider">
+                    <ul>
+                      <li style="background-image:url(../assets/img/States/KS/13.1.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>
+                        </div>
+                      </li>
+                      <li style="background-image:url(../assets/img/States/KS/13.2.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>
+                        </div>
+                      </li>
+                      <li style="background-image:url(../assets/img/States/KS/13.3.jpg)">
+                        <div class="center-y">
+                          <h3></h3>
+                          <a href="#"></a>
+                        </div>
+                      </li>
+                    </ul>
+
+                    <ul>
+                      <nav>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                      </nav>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+<br/><br/>
+            <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<script src="{% static 'js/states.js' %}"></script>
+
+
+</body>
+</html>
